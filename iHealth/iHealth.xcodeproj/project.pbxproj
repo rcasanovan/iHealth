@@ -17,8 +17,6 @@
 		C858A05621EFA56B000321DC /* MyGoalsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A05521EFA56B000321DC /* MyGoalsRouter.swift */; };
 		C858A05921EFA7D4000321DC /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A05821EFA7D4000321DC /* MainTabBar.swift */; };
 		C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887ED9721EF45C400D627D9 /* AppDelegate.swift */; };
-		C887ED9A21EF45C400D627D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887ED9921EF45C400D627D9 /* ViewController.swift */; };
-		C887ED9D21EF45C400D627D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887ED9B21EF45C400D627D9 /* Main.storyboard */; };
 		C887ED9F21EF45C500D627D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C887ED9E21EF45C500D627D9 /* Assets.xcassets */; };
 		C887EDA221EF45C500D627D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887EDA021EF45C500D627D9 /* LaunchScreen.storyboard */; };
 		C887EDB921EF45FC00D627D9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C887EDB821EF45FC00D627D9 /* HealthKit.framework */; };
@@ -73,8 +71,6 @@
 		C858A05821EFA7D4000321DC /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		C887ED9421EF45C400D627D9 /* iHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C887ED9721EF45C400D627D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C887ED9921EF45C400D627D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C887ED9C21EF45C400D627D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C887ED9E21EF45C500D627D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C887EDA121EF45C500D627D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C887EDA321EF45C500D627D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,7 +79,6 @@
 		C887EDB821EF45FC00D627D9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		C887EDBA21EF461F00D627D9 /* iHealth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iHealth.entitlements; sourceTree = "<group>"; };
 		C887EDC021EF47B800D627D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C887EDC221EF47E200D627D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		C887EDC321EF47E200D627D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		C887EDC421EF47E200D627D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C887EDC721EF488900D627D9 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
@@ -194,8 +189,6 @@
 				C887EE0F21EF939800D627D9 /* iHealth-Bridging-Header.h */,
 				C887EDBA21EF461F00D627D9 /* iHealth.entitlements */,
 				C887ED9721EF45C400D627D9 /* AppDelegate.swift */,
-				C887ED9921EF45C400D627D9 /* ViewController.swift */,
-				C887ED9B21EF45C400D627D9 /* Main.storyboard */,
 				C887EDD121EF580F00D627D9 /* Views */,
 				C887EDCE21EF555C00D627D9 /* Utils */,
 				C887EDD521EF8D8B00D627D9 /* Network */,
@@ -497,7 +490,6 @@
 				C887EDBF21EF47B800D627D9 /* InfoPlist.strings in Resources */,
 				C887ED9F21EF45C500D627D9 /* Assets.xcassets in Resources */,
 				C887EE0221EF8FE500D627D9 /* Goals.json in Resources */,
-				C887ED9D21EF45C400D627D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,7 +599,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C887EDF221EF8D8C00D627D9 /* ResultError.swift in Sources */,
-				C887ED9A21EF45C400D627D9 /* ViewController.swift in Sources */,
 				C887EDC821EF488900D627D9 /* HealthManager.swift in Sources */,
 				C858A04D21EFA3C4000321DC /* MyGoalsProtocols.swift in Sources */,
 				C887EDFD21EF8E0600D627D9 /* GoalResponse.swift in Sources */,
@@ -659,15 +650,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C887ED9B21EF45C400D627D9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C887ED9C21EF45C400D627D9 /* Base */,
-				C887EDC221EF47E200D627D9 /* es */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C887EDA021EF45C500D627D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
