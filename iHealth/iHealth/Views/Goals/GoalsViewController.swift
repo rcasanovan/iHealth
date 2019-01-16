@@ -113,4 +113,11 @@ extension GoalsViewController: GoalsViewInjection {
     func showMessageWith(title: String, message: String, actionTitle: String) {
         showAlertWith(title: title, message: message, actionTitle: actionTitle)
     }
+    
+    func loadGoals(_ viewModels: [GoalViewModel]) {
+        refreshControl.endRefreshing()
+        datasource?.goals = viewModels
+        goalsTableView?.reloadData()
+    }
+    
 }
