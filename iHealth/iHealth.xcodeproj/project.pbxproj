@@ -15,6 +15,7 @@
 		C858A05121EFA3E0000321DC /* MyGoalsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A05021EFA3E0000321DC /* MyGoalsPresenter.swift */; };
 		C858A05421EFA55F000321DC /* MyGoalsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A05321EFA55F000321DC /* MyGoalsInteractor.swift */; };
 		C858A05621EFA56B000321DC /* MyGoalsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A05521EFA56B000321DC /* MyGoalsRouter.swift */; };
+		C858A05921EFA7D4000321DC /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A05821EFA7D4000321DC /* MainTabBar.swift */; };
 		C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887ED9721EF45C400D627D9 /* AppDelegate.swift */; };
 		C887ED9A21EF45C400D627D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887ED9921EF45C400D627D9 /* ViewController.swift */; };
 		C887ED9D21EF45C400D627D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887ED9B21EF45C400D627D9 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		C858A05021EFA3E0000321DC /* MyGoalsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsPresenter.swift; sourceTree = "<group>"; };
 		C858A05321EFA55F000321DC /* MyGoalsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsInteractor.swift; sourceTree = "<group>"; };
 		C858A05521EFA56B000321DC /* MyGoalsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsRouter.swift; sourceTree = "<group>"; };
+		C858A05821EFA7D4000321DC /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		C887ED9421EF45C400D627D9 /* iHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C887ED9721EF45C400D627D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C887ED9921EF45C400D627D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,14 @@
 				C858A05521EFA56B000321DC /* MyGoalsRouter.swift */,
 			);
 			path = "My Goals";
+			sourceTree = "<group>";
+		};
+		C858A05721EFA7C3000321DC /* Main TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C858A05821EFA7D4000321DC /* MainTabBar.swift */,
+			);
+			path = "Main TabBar";
 			sourceTree = "<group>";
 		};
 		C887ED8B21EF45C400D627D9 = {
@@ -273,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				C887EE1B21EF9B4700D627D9 /* Base */,
+				C858A05721EFA7C3000321DC /* Main TabBar */,
 				C887EDD221EF582200D627D9 /* Goals */,
 				C858A04B21EFA3A2000321DC /* My Goals */,
 			);
@@ -613,6 +624,7 @@
 				C887EDF021EF8D8C00D627D9 /* RequestProtocol.swift in Sources */,
 				C887EE1221EF974000D627D9 /* GoalViewModel.swift in Sources */,
 				C887EDEF21EF8D8C00D627D9 /* Result.swift in Sources */,
+				C858A05921EFA7D4000321DC /* MainTabBar.swift in Sources */,
 				C887EDF121EF8D8C00D627D9 /* RequestErrors.swift in Sources */,
 				C887EDD421EF583A00D627D9 /* GoalsProtocols.swift in Sources */,
 				C887EE1A21EF99C100D627D9 /* GoalsRouter.swift in Sources */,
