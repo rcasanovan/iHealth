@@ -19,6 +19,16 @@
 		C887EDCD21EF52CD00D627D9 /* HealthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDCC21EF52CD00D627D9 /* HealthProtocols.swift */; };
 		C887EDD021EF556A00D627D9 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDCF21EF556A00D627D9 /* Device.swift */; };
 		C887EDD421EF583A00D627D9 /* GoalsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDD321EF583A00D627D9 /* GoalsProtocols.swift */; };
+		C887EDEC21EF8D8C00D627D9 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDD721EF8D8B00D627D9 /* RequestManager.swift */; };
+		C887EDED21EF8D8C00D627D9 /* HTTPCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDD821EF8D8B00D627D9 /* HTTPCode.swift */; };
+		C887EDEE21EF8D8C00D627D9 /* NetworkHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDD921EF8D8B00D627D9 /* NetworkHeaders.swift */; };
+		C887EDEF21EF8D8C00D627D9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDDA21EF8D8B00D627D9 /* Result.swift */; };
+		C887EDF021EF8D8C00D627D9 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDDB21EF8D8B00D627D9 /* RequestProtocol.swift */; };
+		C887EDF121EF8D8C00D627D9 /* RequestErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDDD21EF8D8B00D627D9 /* RequestErrors.swift */; };
+		C887EDF221EF8D8C00D627D9 /* ResultError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDDE21EF8D8B00D627D9 /* ResultError.swift */; };
+		C887EDF321EF8D8C00D627D9 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDDF21EF8D8B00D627D9 /* EndPoint.swift */; };
+		C887EDFD21EF8E0600D627D9 /* GoalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDFC21EF8E0600D627D9 /* GoalResponse.swift */; };
+		C887EDFF21EF8EC800D627D9 /* GoalsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDFE21EF8EC800D627D9 /* GoalsRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +62,16 @@
 		C887EDCC21EF52CD00D627D9 /* HealthProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProtocols.swift; sourceTree = "<group>"; };
 		C887EDCF21EF556A00D627D9 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		C887EDD321EF583A00D627D9 /* GoalsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsProtocols.swift; sourceTree = "<group>"; };
+		C887EDD721EF8D8B00D627D9 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		C887EDD821EF8D8B00D627D9 /* HTTPCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPCode.swift; sourceTree = "<group>"; };
+		C887EDD921EF8D8B00D627D9 /* NetworkHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHeaders.swift; sourceTree = "<group>"; };
+		C887EDDA21EF8D8B00D627D9 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		C887EDDB21EF8D8B00D627D9 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		C887EDDD21EF8D8B00D627D9 /* RequestErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestErrors.swift; sourceTree = "<group>"; };
+		C887EDDE21EF8D8B00D627D9 /* ResultError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultError.swift; sourceTree = "<group>"; };
+		C887EDDF21EF8D8B00D627D9 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		C887EDFC21EF8E0600D627D9 /* GoalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalResponse.swift; sourceTree = "<group>"; };
+		C887EDFE21EF8EC800D627D9 /* GoalsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +121,7 @@
 				C887ED9B21EF45C400D627D9 /* Main.storyboard */,
 				C887EDD121EF580F00D627D9 /* Views */,
 				C887EDCE21EF555C00D627D9 /* Utils */,
+				C887EDD521EF8D8B00D627D9 /* Network */,
 				C887EDC521EF486800D627D9 /* Managers */,
 				C887EDBB21EF476B00D627D9 /* Resources */,
 				C887ED9E21EF45C500D627D9 /* Assets.xcassets */,
@@ -188,6 +209,63 @@
 			isa = PBXGroup;
 			children = (
 				C887EDD321EF583A00D627D9 /* GoalsProtocols.swift */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		C887EDD521EF8D8B00D627D9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C887EDD621EF8D8B00D627D9 /* Common */,
+				C887EDE021EF8D8B00D627D9 /* Request */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C887EDD621EF8D8B00D627D9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C887EDD721EF8D8B00D627D9 /* RequestManager.swift */,
+				C887EDD821EF8D8B00D627D9 /* HTTPCode.swift */,
+				C887EDD921EF8D8B00D627D9 /* NetworkHeaders.swift */,
+				C887EDDA21EF8D8B00D627D9 /* Result.swift */,
+				C887EDDB21EF8D8B00D627D9 /* RequestProtocol.swift */,
+				C887EDDC21EF8D8B00D627D9 /* Errors */,
+				C887EDDF21EF8D8B00D627D9 /* EndPoint.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C887EDDC21EF8D8B00D627D9 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				C887EDDD21EF8D8B00D627D9 /* RequestErrors.swift */,
+				C887EDDE21EF8D8B00D627D9 /* ResultError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		C887EDE021EF8D8B00D627D9 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				C887EDE121EF8D8B00D627D9 /* Data Models */,
+				C887EDFE21EF8EC800D627D9 /* GoalsRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		C887EDE121EF8D8B00D627D9 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				C887EDFB21EF8DE800D627D9 /* Goals */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		C887EDFB21EF8DE800D627D9 /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				C887EDFC21EF8E0600D627D9 /* GoalResponse.swift */,
 			);
 			path = Goals;
 			sourceTree = "<group>";
@@ -300,12 +378,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C887EDF221EF8D8C00D627D9 /* ResultError.swift in Sources */,
 				C887ED9A21EF45C400D627D9 /* ViewController.swift in Sources */,
 				C887EDC821EF488900D627D9 /* HealthManager.swift in Sources */,
+				C887EDFD21EF8E0600D627D9 /* GoalResponse.swift in Sources */,
 				C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */,
 				C887EDCD21EF52CD00D627D9 /* HealthProtocols.swift in Sources */,
+				C887EDFF21EF8EC800D627D9 /* GoalsRequest.swift in Sources */,
+				C887EDED21EF8D8C00D627D9 /* HTTPCode.swift in Sources */,
+				C887EDEC21EF8D8C00D627D9 /* RequestManager.swift in Sources */,
+				C887EDF021EF8D8C00D627D9 /* RequestProtocol.swift in Sources */,
+				C887EDEF21EF8D8C00D627D9 /* Result.swift in Sources */,
+				C887EDF121EF8D8C00D627D9 /* RequestErrors.swift in Sources */,
 				C887EDD421EF583A00D627D9 /* GoalsProtocols.swift in Sources */,
 				C887EDD021EF556A00D627D9 /* Device.swift in Sources */,
+				C887EDF321EF8D8C00D627D9 /* EndPoint.swift in Sources */,
+				C887EDEE21EF8D8C00D627D9 /* NetworkHeaders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
