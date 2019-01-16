@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4DF48122BB365C853A38495A /* Pods_iHealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DD8E2C52EAF83E0E978B10 /* Pods_iHealth.framework */; };
 		8635A5D71895FF0CC22D1318 /* Pods_iHealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */; };
+		C858A04A21EF9C0F000321DC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A04921EF9C0F000321DC /* BaseViewController.swift */; };
 		C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887ED9721EF45C400D627D9 /* AppDelegate.swift */; };
 		C887ED9A21EF45C400D627D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887ED9921EF45C400D627D9 /* ViewController.swift */; };
 		C887ED9D21EF45C400D627D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887ED9B21EF45C400D627D9 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		17DD8E2C52EAF83E0E978B10 /* Pods_iHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80638E1C970545C0757E3D28 /* Pods-iHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iHealth/Pods-iHealth.debug.xcconfig"; sourceTree = "<group>"; };
 		99AAC1C6FDE0804E8D95A577 /* Pods-iHealthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealthTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iHealthTests/Pods-iHealthTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C858A04921EF9C0F000321DC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C887ED9421EF45C400D627D9 /* iHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C887ED9721EF45C400D627D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C887ED9921EF45C400D627D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 		C887EE1B21EF9B4700D627D9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C858A04921EF9C0F000321DC /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -574,6 +577,7 @@
 				C887EDC821EF488900D627D9 /* HealthManager.swift in Sources */,
 				C887EDFD21EF8E0600D627D9 /* GoalResponse.swift in Sources */,
 				C887EE0D21EF90FF00D627D9 /* ReachabilityManager.swift in Sources */,
+				C858A04A21EF9C0F000321DC /* BaseViewController.swift in Sources */,
 				C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */,
 				C887EDCD21EF52CD00D627D9 /* HealthProtocols.swift in Sources */,
 				C887EDFF21EF8EC800D627D9 /* GoalsRequest.swift in Sources */,

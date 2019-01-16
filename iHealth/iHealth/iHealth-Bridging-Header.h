@@ -9,6 +9,9 @@
 #ifndef iHealth_Bridging_Header_h
 #define iHealth_Bridging_Header_h
 
+//__ SVProgressHUD
+#import <SVProgressHUD/SVProgressHUD.h>
+
 //__ Reachability
 #import "Reachability.h"
 
