@@ -34,6 +34,10 @@
 		C887EE0C21EF90FF00D627D9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C887EE0921EF90FF00D627D9 /* Reachability.m */; };
 		C887EE0D21EF90FF00D627D9 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE0A21EF90FF00D627D9 /* ReachabilityManager.swift */; };
 		C887EE1221EF974000D627D9 /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1121EF974000D627D9 /* GoalViewModel.swift */; };
+		C887EE1421EF99A100D627D9 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1321EF99A100D627D9 /* GoalsViewController.swift */; };
+		C887EE1621EF99AB00D627D9 /* GoalsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1521EF99AB00D627D9 /* GoalsPresenter.swift */; };
+		C887EE1821EF99B600D627D9 /* GoalsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1721EF99B600D627D9 /* GoalsInteractor.swift */; };
+		C887EE1A21EF99C100D627D9 /* GoalsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1921EF99C100D627D9 /* GoalsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,10 @@
 		C887EE0B21EF90FF00D627D9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		C887EE0F21EF939800D627D9 /* iHealth-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iHealth-Bridging-Header.h"; sourceTree = "<group>"; };
 		C887EE1121EF974000D627D9 /* GoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModel.swift; sourceTree = "<group>"; };
+		C887EE1321EF99A100D627D9 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		C887EE1521EF99AB00D627D9 /* GoalsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsPresenter.swift; sourceTree = "<group>"; };
+		C887EE1721EF99B600D627D9 /* GoalsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsInteractor.swift; sourceTree = "<group>"; };
+		C887EE1921EF99C100D627D9 /* GoalsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +234,10 @@
 			children = (
 				C887EE1021EF972B00D627D9 /* View Model */,
 				C887EDD321EF583A00D627D9 /* GoalsProtocols.swift */,
+				C887EE1321EF99A100D627D9 /* GoalsViewController.swift */,
+				C887EE1521EF99AB00D627D9 /* GoalsPresenter.swift */,
+				C887EE1721EF99B600D627D9 /* GoalsInteractor.swift */,
+				C887EE1921EF99C100D627D9 /* GoalsRouter.swift */,
 			);
 			path = Goals;
 			sourceTree = "<group>";
@@ -439,14 +451,18 @@
 				C887EDCD21EF52CD00D627D9 /* HealthProtocols.swift in Sources */,
 				C887EDFF21EF8EC800D627D9 /* GoalsRequest.swift in Sources */,
 				C887EDED21EF8D8C00D627D9 /* HTTPCode.swift in Sources */,
+				C887EE1421EF99A100D627D9 /* GoalsViewController.swift in Sources */,
 				C887EDEC21EF8D8C00D627D9 /* RequestManager.swift in Sources */,
 				C887EDF021EF8D8C00D627D9 /* RequestProtocol.swift in Sources */,
 				C887EE1221EF974000D627D9 /* GoalViewModel.swift in Sources */,
 				C887EDEF21EF8D8C00D627D9 /* Result.swift in Sources */,
 				C887EDF121EF8D8C00D627D9 /* RequestErrors.swift in Sources */,
 				C887EDD421EF583A00D627D9 /* GoalsProtocols.swift in Sources */,
+				C887EE1A21EF99C100D627D9 /* GoalsRouter.swift in Sources */,
+				C887EE1621EF99AB00D627D9 /* GoalsPresenter.swift in Sources */,
 				C887EDD021EF556A00D627D9 /* Device.swift in Sources */,
 				C887EDF321EF8D8C00D627D9 /* EndPoint.swift in Sources */,
+				C887EE1821EF99B600D627D9 /* GoalsInteractor.swift in Sources */,
 				C887EDEE21EF8D8C00D627D9 /* NetworkHeaders.swift in Sources */,
 				C887EE0C21EF90FF00D627D9 /* Reachability.m in Sources */,
 			);

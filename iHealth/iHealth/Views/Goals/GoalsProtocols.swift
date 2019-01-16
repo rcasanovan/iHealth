@@ -18,7 +18,10 @@ protocol GoalsPresenterDelegate : class {
 
 // Presenter / Interactor
 
+typealias GoalsGetGoalsCompletionBlock = (_ viewModel: [GoalViewModel]?, _ success: Bool, _ error: ResultError?) -> Void
+
 protocol GoalsInteractorDelegate : class {
+    func getGoals(completion: @escaping GoalsGetGoalsCompletionBlock)
 }
 
 // Presenter / Router
