@@ -9,7 +9,7 @@
 import Foundation
 
 typealias HealthAuthCompletionBlock = (_ success: Bool, _ error: Error?) -> Void
-typealias HealthGetStepsCompletionBlock = (_ steps: Int, _ success: Bool, _ error: Error?) -> Void
+typealias HealthGetStepsCompletionBlock = (_ steps: Double, _ success: Bool, _ error: Error?) -> Void
 
 protocol HealthDelegate: class {
     func requestAuthorization(completion: @escaping HealthAuthCompletionBlock)

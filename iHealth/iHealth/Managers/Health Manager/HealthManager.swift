@@ -29,12 +29,13 @@ extension HealthManager: HealthDelegate {
             return
         }
         
-        guard let running = HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning) else {
+        guard let running = HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning),
+            let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount) else {
             completion(false, nil)
             return
         }
         
-        let healthKitTypes: Set<HKSampleType> = [running]
+        let healthKitTypes: Set<HKSampleType> = [running, stepsQuantityType]
         
         store.requestAuthorization(toShare: healthKitTypes, read: healthKitTypes) { (success, error) in
             completion(success, error)
@@ -42,22 +43,21 @@ extension HealthManager: HealthDelegate {
     }
     
     func getSteps(completion: @escaping HealthGetStepsCompletionBlock) {
-        guard let startDate = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: Date()) else {
+        guard let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount) else {
             completion(0, false, nil)
             return
         }
         
-        let endDate = Date()
+        let now = Date()
+        let startOfDay = Calendar.current.startOfDay(for: now)
+        let predicate = HKQuery.predicateForSamples(withStart: startOfDay, end: now, options: .strictStartDate)
         
-        print("Collecting workouts between \(startDate) and \(endDate)")
-        
-        let predicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate, options: HKQueryOptions.strictEndDate)
-        
-        let query = HKSampleQuery(sampleType: HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { (query, results, error) in
-            for item in results! {
-                print(item)
+        let query = HKStatisticsQuery(quantityType: stepsQuantityType, quantitySamplePredicate: predicate, options: .cumulativeSum) { _, result, _ in
+            guard let result = result, let sum = result.sumQuantity() else {
+                completion(0.0, false, nil)
+                return
             }
-            completion(0, false, nil)
+            completion(sum.doubleValue(for: HKUnit.count()), true, nil)
         }
         
         store.execute(query)

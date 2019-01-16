@@ -26,9 +26,30 @@ class HealthManagerTests: XCTestCase {
     func testRequestAuthorization() {
         XCTAssert(Device.isSimulator == false, "You need to run the app in a real device")
         
+        let authExpectation: XCTestExpectation = self.expectation(description: "authExpectation")
+        
         HealthManager.shared.requestAuthorization { (success, error) in
-            XCTAssertNotNil(error, "Error getting the user permission")
+            XCTAssertNil(error, "Error getting the user permission")
+            authExpectation.fulfill()
         }
+        
+        self.waitForExpectations(timeout: 25.0, handler: nil)
+    }
+    
+    func testGetSteps() {
+        XCTAssert(Device.isSimulator == false, "You need to run the app in a real device")
+        
+        let stepsExpectation: XCTestExpectation = self.expectation(description: "stepsExpectation")
+        
+        HealthManager.shared.requestAuthorization { (success, error) in
+            XCTAssertNil(error, "Error getting the user permission")
+            HealthManager.shared.getSteps(completion: { (steps, success, error) in
+                XCTAssertTrue(success, "Error getting the user steps")
+                stepsExpectation.fulfill()
+            })
+        }
+        
+        self.waitForExpectations(timeout: 25.0, handler: nil)
     }
 
 }
