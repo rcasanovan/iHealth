@@ -29,6 +29,7 @@
 		C887EDF321EF8D8C00D627D9 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDDF21EF8D8B00D627D9 /* EndPoint.swift */; };
 		C887EDFD21EF8E0600D627D9 /* GoalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDFC21EF8E0600D627D9 /* GoalResponse.swift */; };
 		C887EDFF21EF8EC800D627D9 /* GoalsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDFE21EF8EC800D627D9 /* GoalsRequest.swift */; };
+		C887EE0221EF8FE500D627D9 /* Goals.json in Resources */ = {isa = PBXBuildFile; fileRef = C887EE0121EF8FE500D627D9 /* Goals.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		C887EDDF21EF8D8B00D627D9 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		C887EDFC21EF8E0600D627D9 /* GoalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalResponse.swift; sourceTree = "<group>"; };
 		C887EDFE21EF8EC800D627D9 /* GoalsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRequest.swift; sourceTree = "<group>"; };
+		C887EE0121EF8FE500D627D9 /* Goals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Goals.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		C887EDBB21EF476B00D627D9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C887EE0021EF8F8D00D627D9 /* Simulated Response */,
 				C887EDBC21EF478C00D627D9 /* Localizable Strings */,
 			);
 			path = Resources;
@@ -270,6 +273,14 @@
 			path = Goals;
 			sourceTree = "<group>";
 		};
+		C887EE0021EF8F8D00D627D9 /* Simulated Response */ = {
+			isa = PBXGroup;
+			children = (
+				C887EE0121EF8FE500D627D9 /* Goals.json */,
+			);
+			path = "Simulated Response";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -360,6 +371,7 @@
 				C887EDA221EF45C500D627D9 /* LaunchScreen.storyboard in Resources */,
 				C887EDBF21EF47B800D627D9 /* InfoPlist.strings in Resources */,
 				C887ED9F21EF45C500D627D9 /* Assets.xcassets in Resources */,
+				C887EE0221EF8FE500D627D9 /* Goals.json in Resources */,
 				C887ED9D21EF45C400D627D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

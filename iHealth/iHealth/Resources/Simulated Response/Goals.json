@@ -1,0 +1,71 @@
+{
+  "items": [
+    {
+      "id": "1000",
+      "title": "Easy walk steps",
+      "description": "Walk 500 steps a day",
+      "type": "step",
+      "goal": 500,
+      "reward": {
+        "trophy": "bronze_medal",
+        "points": 5
+      }
+    },
+    {
+      "id": "1001",
+      "title": "Medium walk steps",
+      "description": "Walk 1000 steps a day",
+      "type": "step",
+      "goal": 1000,
+      "reward": {
+        "trophy": "silver_medal",
+        "points": 10
+      }
+    },
+    {
+      "id": "1002",
+      "title": "Hard walk steps",
+      "description": "Walk 6000 steps a day",
+      "type": "step",
+      "goal": 6000,
+      "reward": {
+        "trophy": "gold_medal",
+        "points": 20
+      }
+    },
+    {
+      "id": "1003",
+      "title": "Walk some distance",
+      "description": "Take a walk for 1 kilometer",
+      "type": "walking_distance",
+      "goal": 1000,
+      "reward": {
+        "trophy": "bronze_medal",
+        "points": 5
+      }
+    },
+    {
+      "id": "1004",
+      "title": "Quick Run",
+      "description": "Burn that donut by running 1 kilometer",
+      "type": "running_distance",
+      "goal": 1000,
+      "reward": {
+        "trophy": "silver_medal",
+        "points": 5
+      }
+    },
+    {
+      "id": "1005",
+      "title": "Medium Run",
+      "description": "Zombie apocalypse may come any day soon, be prepared for the occasion",
+      "type": "running_distance",
+      "goal": 5000,
+      "reward": {
+        "trophy": "zombie_hand",
+        "points": 43
+      }
+    }
+  ],
+  "nextPageToken": "not used"
+}
