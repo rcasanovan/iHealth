@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        configureNavigationBar()
         showInitialView()
         return true
     }
@@ -51,6 +52,8 @@ extension AppDelegate  {
     private func configureNavigationBar() {
         UINavigationBar.appearance().barStyle = .default
         UINavigationBar.appearance().barTintColor = .white
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().barStyle = .blackOpaque
     }
     
 }
