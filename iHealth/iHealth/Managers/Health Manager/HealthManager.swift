@@ -9,6 +9,11 @@
 import Foundation
 import HealthKit
 
+enum HealthValueType {
+    case distance
+    case steps
+}
+
 class HealthManager: NSObject {
     
     let store: HKHealthStore
@@ -19,6 +24,28 @@ class HealthManager: NSObject {
         super.init()
     }
 
+}
+
+extension HealthManager {
+    
+    private func getIdentifierForType(_ type: HealthValueType) -> HKQuantityTypeIdentifier {
+        switch type {
+        case .distance:
+            return .distanceWalkingRunning
+        case .steps:
+            return .stepCount
+        }
+    }
+    
+    private func getUnitForType(_ type: HealthValueType) -> HKUnit {
+        switch type {
+        case .distance:
+            return HKUnit.meter()
+        case .steps:
+            return HKUnit.count()
+        }
+    }
+    
 }
 
 extension HealthManager: HealthDelegate {
@@ -42,29 +69,8 @@ extension HealthManager: HealthDelegate {
         }
     }
     
-    func getSteps(completion: @escaping HealthGetStepsCompletionBlock) {
-        guard let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount) else {
-            completion(0, false, nil)
-            return
-        }
-        
-        let now = Date()
-        let startOfDay = Calendar.current.startOfDay(for: now)
-        let predicate = HKQuery.predicateForSamples(withStart: startOfDay, end: now, options: .strictStartDate)
-        
-        let query = HKStatisticsQuery(quantityType: stepsQuantityType, quantitySamplePredicate: predicate, options: .cumulativeSum) { _, result, _ in
-            guard let result = result, let sum = result.sumQuantity() else {
-                completion(0.0, false, nil)
-                return
-            }
-            completion(sum.doubleValue(for: HKUnit.count()), true, nil)
-        }
-        
-        store.execute(query)
-    }
-    
-    func getDistance(completion: @escaping HealthGetStepsCompletionBlock) {
-        guard let quantityType = HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning) else {
+    func getValueForType(_ type: HealthValueType, completion: @escaping HealthGetValueCompletionBlock) {
+        guard let quantityType = HKQuantityType.quantityType(forIdentifier: getIdentifierForType(type)) else {
             completion(0, false, nil)
             return
         }
@@ -78,7 +84,7 @@ extension HealthManager: HealthDelegate {
                 completion(0.0, false, nil)
                 return
             }
-            completion(sum.doubleValue(for: HKUnit.meter()), true, nil)
+            completion(sum.doubleValue(for: self.getUnitForType(type)), true, nil)
         }
         
         store.execute(query)
