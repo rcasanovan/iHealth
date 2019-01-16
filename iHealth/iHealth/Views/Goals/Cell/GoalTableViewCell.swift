@@ -11,6 +11,7 @@ import UIKit
 class GoalTableViewCell: UITableViewCell {
     
     private let goalBackgroundView: GradientView = GradientView()
+    private let goalImageView: UIImageView = UIImageView()
     
     static public var identifier: String {
         return String(describing: self)
@@ -60,6 +61,8 @@ extension GoalTableViewCell {
      */
     private func configureSubviews() {        
         goalBackgroundView.colors = [UIColor.colorWithHex(hex: "#ff6855").cgColor, UIColor.colorWithHex(hex: "#fe5c46").cgColor, UIColor.colorWithHex(hex: "#ff5350").cgColor, UIColor.colorWithHex(hex: "#fe4e36").cgColor]
+        
+        goalImageView.backgroundColor = .yellow
     }
     
 }
@@ -79,6 +82,13 @@ extension GoalTableViewCell {
             static let height: CGFloat = 80.0
         }
         
+        struct GoalImageView {
+            static let leading: CGFloat = 10.0
+            static let top: CGFloat = 10.0
+            static let height: CGFloat = 60.0
+            static let width: CGFloat = 60.0
+        }
+        
     }
     
     /**
@@ -86,9 +96,13 @@ extension GoalTableViewCell {
      */
     private func addSubviews() {
         addSubview(goalBackgroundView)
+        goalBackgroundView.addSubview(goalImageView)
         
         addConstraintsWithFormat("H:|-\(Layout.GoalBackgroundView.leading)-[v0]-\(Layout.GoalBackgroundView.trailing)-|", views: goalBackgroundView)
         addConstraintsWithFormat("V:|-\(Layout.GoalBackgroundView.top)-[v0(\(Layout.GoalBackgroundView.height))]|", views: goalBackgroundView)
+        
+        goalBackgroundView.addConstraintsWithFormat("H:|-\(Layout.GoalImageView.leading)-[v0(\(Layout.GoalImageView.width))]", views: goalImageView)
+        goalBackgroundView.addConstraintsWithFormat("V:|-\(Layout.GoalImageView.top)-[v0(\(Layout.GoalImageView.height))]|", views: goalImageView)
     }
     
 }

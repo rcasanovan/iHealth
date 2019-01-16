@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>InterUI-Black.ttf</string>
+		<string>InterUI-BlackItalic.ttf</string>
+		<string>InterUI-Bold.ttf</string>
+		<string>InterUI-BoldItalic.ttf</string>
+		<string>InterUI-Italic.ttf</string>
+		<string>InterUI-Medium.ttf</string>
+		<string>InterUI-MediumItalic.ttf</string>
+		<string>InterUI-Regular.ttf</string>
+	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>

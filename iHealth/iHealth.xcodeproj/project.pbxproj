@@ -21,6 +21,15 @@
 		C858A06221EFB3C8000321DC /* GoalsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A06121EFB3C8000321DC /* GoalsDatasource.swift */; };
 		C858A06E21EFBABE000321DC /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A06D21EFBABE000321DC /* GradientView.swift */; };
 		C858A07121EFBB1D000321DC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A07021EFBB1D000321DC /* UIColor.swift */; };
+		C858A07B21EFC11C000321DC /* InterUI-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C858A07321EFC11C000321DC /* InterUI-Bold.ttf */; };
+		C858A07C21EFC11C000321DC /* InterUI-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C858A07421EFC11C000321DC /* InterUI-Black.ttf */; };
+		C858A07D21EFC11C000321DC /* InterUI-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C858A07521EFC11C000321DC /* InterUI-MediumItalic.ttf */; };
+		C858A07E21EFC11C000321DC /* InterUI-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C858A07621EFC11C000321DC /* InterUI-BlackItalic.ttf */; };
+		C858A07F21EFC11C000321DC /* InterUI-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C858A07721EFC11C000321DC /* InterUI-BoldItalic.ttf */; };
+		C858A08021EFC11C000321DC /* InterUI-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C858A07821EFC11C000321DC /* InterUI-Medium.ttf */; };
+		C858A08121EFC11C000321DC /* InterUI-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C858A07921EFC11C000321DC /* InterUI-Regular.ttf */; };
+		C858A08221EFC11C000321DC /* InterUI-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C858A07A21EFC11C000321DC /* InterUI-Italic.ttf */; };
+		C858A08521EFC158000321DC /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A08421EFC158000321DC /* UIFont.swift */; };
 		C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887ED9721EF45C400D627D9 /* AppDelegate.swift */; };
 		C887ED9F21EF45C500D627D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C887ED9E21EF45C500D627D9 /* Assets.xcassets */; };
 		C887EDA221EF45C500D627D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887EDA021EF45C500D627D9 /* LaunchScreen.storyboard */; };
@@ -79,6 +88,15 @@
 		C858A06121EFB3C8000321DC /* GoalsDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsDatasource.swift; sourceTree = "<group>"; };
 		C858A06D21EFBABE000321DC /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		C858A07021EFBB1D000321DC /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C858A07321EFC11C000321DC /* InterUI-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterUI-Bold.ttf"; sourceTree = "<group>"; };
+		C858A07421EFC11C000321DC /* InterUI-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterUI-Black.ttf"; sourceTree = "<group>"; };
+		C858A07521EFC11C000321DC /* InterUI-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterUI-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C858A07621EFC11C000321DC /* InterUI-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterUI-BlackItalic.ttf"; sourceTree = "<group>"; };
+		C858A07721EFC11C000321DC /* InterUI-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterUI-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C858A07821EFC11C000321DC /* InterUI-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterUI-Medium.ttf"; sourceTree = "<group>"; };
+		C858A07921EFC11C000321DC /* InterUI-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterUI-Regular.ttf"; sourceTree = "<group>"; };
+		C858A07A21EFC11C000321DC /* InterUI-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterUI-Italic.ttf"; sourceTree = "<group>"; };
+		C858A08421EFC158000321DC /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		C887ED9421EF45C400D627D9 /* iHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C887ED9721EF45C400D627D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C887ED9E21EF45C500D627D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -176,6 +194,7 @@
 		C858A05A21EFB24A000321DC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C858A08321EFC14A000321DC /* UIFont */,
 				C858A06F21EFBB12000321DC /* UIColor */,
 				C858A05B21EFB252000321DC /* UIView */,
 			);
@@ -220,6 +239,29 @@
 				C858A07021EFBB1D000321DC /* UIColor.swift */,
 			);
 			path = UIColor;
+			sourceTree = "<group>";
+		};
+		C858A07221EFC11C000321DC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C858A07321EFC11C000321DC /* InterUI-Bold.ttf */,
+				C858A07421EFC11C000321DC /* InterUI-Black.ttf */,
+				C858A07521EFC11C000321DC /* InterUI-MediumItalic.ttf */,
+				C858A07621EFC11C000321DC /* InterUI-BlackItalic.ttf */,
+				C858A07721EFC11C000321DC /* InterUI-BoldItalic.ttf */,
+				C858A07821EFC11C000321DC /* InterUI-Medium.ttf */,
+				C858A07921EFC11C000321DC /* InterUI-Regular.ttf */,
+				C858A07A21EFC11C000321DC /* InterUI-Italic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C858A08321EFC14A000321DC /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				C858A08421EFC158000321DC /* UIFont.swift */,
+			);
+			path = UIFont;
 			sourceTree = "<group>";
 		};
 		C887ED8B21EF45C400D627D9 = {
@@ -284,6 +326,7 @@
 		C887EDBB21EF476B00D627D9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C858A07221EFC11C000321DC /* Fonts */,
 				C887EE0021EF8F8D00D627D9 /* Simulated Response */,
 				C887EDBC21EF478C00D627D9 /* Localizable Strings */,
 			);
@@ -549,7 +592,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C858A07B21EFC11C000321DC /* InterUI-Bold.ttf in Resources */,
+				C858A08221EFC11C000321DC /* InterUI-Italic.ttf in Resources */,
+				C858A07C21EFC11C000321DC /* InterUI-Black.ttf in Resources */,
 				C887EDA221EF45C500D627D9 /* LaunchScreen.storyboard in Resources */,
+				C858A07F21EFC11C000321DC /* InterUI-BoldItalic.ttf in Resources */,
+				C858A08021EFC11C000321DC /* InterUI-Medium.ttf in Resources */,
+				C858A07E21EFC11C000321DC /* InterUI-BlackItalic.ttf in Resources */,
+				C858A07D21EFC11C000321DC /* InterUI-MediumItalic.ttf in Resources */,
+				C858A08121EFC11C000321DC /* InterUI-Regular.ttf in Resources */,
 				C887EDBF21EF47B800D627D9 /* InfoPlist.strings in Resources */,
 				C887ED9F21EF45C500D627D9 /* Assets.xcassets in Resources */,
 				C887EE0221EF8FE500D627D9 /* Goals.json in Resources */,
@@ -664,6 +715,7 @@
 				C887EDF221EF8D8C00D627D9 /* ResultError.swift in Sources */,
 				C887EDC821EF488900D627D9 /* HealthManager.swift in Sources */,
 				C858A04D21EFA3C4000321DC /* MyGoalsProtocols.swift in Sources */,
+				C858A08521EFC158000321DC /* UIFont.swift in Sources */,
 				C887EDFD21EF8E0600D627D9 /* GoalResponse.swift in Sources */,
 				C887EE0D21EF90FF00D627D9 /* ReachabilityManager.swift in Sources */,
 				C858A04A21EF9C0F000321DC /* BaseViewController.swift in Sources */,
