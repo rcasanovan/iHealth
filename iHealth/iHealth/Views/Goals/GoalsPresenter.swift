@@ -21,9 +21,38 @@ class GoalsPresenter {
     
 }
 
+extension GoalsPresenter {
+    
+    private func getGoals() {
+        view?.showProgress(true, status: "Loading goals")
+        
+        interactor.getGoalsList { [weak self] (goals, success, error) in
+            guard let `self` = self else { return }
+            
+            self.view?.showProgress(false)
+            
+            if let goals = goals {
+                return
+            }
+            
+            if let error = error {
+                self.view?.showMessageWith(title: "Oops... 🧐", message: error.localizedDescription, actionTitle: "Accept")
+                return
+            }
+            
+            if !success {
+                self.view?.showMessageWith(title: "Oops... 🧐", message: "Something wrong happened. Please try again", actionTitle: "Accept")
+                return
+            }
+        }
+    }
+    
+}
+
 extension GoalsPresenter: GoalsPresenterDelegate {
     
     func viewDidLoad() {
+        getGoals()
     }
     
 }

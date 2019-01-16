@@ -10,6 +10,9 @@ import Foundation
 
 // View / Presenter
 protocol GoalsViewInjection : class {
+    func showProgress(_ show: Bool, status: String)
+    func showProgress(_ show: Bool)
+    func showMessageWith(title: String, message: String, actionTitle: String)
 }
 
 protocol GoalsPresenterDelegate : class {
@@ -21,7 +24,7 @@ protocol GoalsPresenterDelegate : class {
 typealias GoalsGetGoalsCompletionBlock = (_ viewModel: [GoalViewModel]?, _ success: Bool, _ error: ResultError?) -> Void
 
 protocol GoalsInteractorDelegate : class {
-    func getGoals(completion: @escaping GoalsGetGoalsCompletionBlock)
+    func getGoalsList(completion: @escaping GoalsGetGoalsCompletionBlock)
 }
 
 // Presenter / Router

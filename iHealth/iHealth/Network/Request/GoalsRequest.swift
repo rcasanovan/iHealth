@@ -19,5 +19,6 @@ struct GoalsRequest: RequestProtocol {
     var verbose: Bool?
     var contentType: ContentType = .json
     var processHeader: Bool?
+    var shouldRetry: Bool = true
     
 }

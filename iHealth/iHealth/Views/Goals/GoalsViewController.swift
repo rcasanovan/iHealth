@@ -21,4 +21,15 @@ class GoalsViewController: BaseViewController {
 
 extension GoalsViewController: GoalsViewInjection {
     
+    func showProgress(_ show: Bool, status: String) {
+        showLoader(show, status: status)
+    }
+    
+    func showProgress(_ show: Bool) {
+        showLoader(show)
+    }
+    
+    func showMessageWith(title: String, message: String, actionTitle: String) {
+        showAlertWith(title: title, message: message, actionTitle: actionTitle)
+    }
 }
