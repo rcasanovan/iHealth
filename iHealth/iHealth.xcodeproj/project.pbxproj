@@ -30,6 +30,9 @@
 		C887EDFD21EF8E0600D627D9 /* GoalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDFC21EF8E0600D627D9 /* GoalResponse.swift */; };
 		C887EDFF21EF8EC800D627D9 /* GoalsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDFE21EF8EC800D627D9 /* GoalsRequest.swift */; };
 		C887EE0221EF8FE500D627D9 /* Goals.json in Resources */ = {isa = PBXBuildFile; fileRef = C887EE0121EF8FE500D627D9 /* Goals.json */; };
+		C887EE0721EF906200D627D9 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE0621EF906200D627D9 /* NetworkTests.swift */; };
+		C887EE0C21EF90FF00D627D9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C887EE0921EF90FF00D627D9 /* Reachability.m */; };
+		C887EE0D21EF90FF00D627D9 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE0A21EF90FF00D627D9 /* ReachabilityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,11 @@
 		C887EDFC21EF8E0600D627D9 /* GoalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalResponse.swift; sourceTree = "<group>"; };
 		C887EDFE21EF8EC800D627D9 /* GoalsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRequest.swift; sourceTree = "<group>"; };
 		C887EE0121EF8FE500D627D9 /* Goals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Goals.json; sourceTree = "<group>"; };
+		C887EE0621EF906200D627D9 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		C887EE0921EF90FF00D627D9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		C887EE0A21EF90FF00D627D9 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		C887EE0B21EF90FF00D627D9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C887EE0F21EF939800D627D9 /* iHealth-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iHealth-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,7 @@
 		C887ED9621EF45C400D627D9 /* iHealth */ = {
 			isa = PBXGroup;
 			children = (
+				C887EE0F21EF939800D627D9 /* iHealth-Bridging-Header.h */,
 				C887EDBA21EF461F00D627D9 /* iHealth.entitlements */,
 				C887ED9721EF45C400D627D9 /* AppDelegate.swift */,
 				C887ED9921EF45C400D627D9 /* ViewController.swift */,
@@ -136,6 +145,7 @@
 		C887EDAB21EF45C600D627D9 /* iHealthTests */ = {
 			isa = PBXGroup;
 			children = (
+				C887EE0321EF903D00D627D9 /* Network */,
 				C887EDC921EF495B00D627D9 /* Health Manager */,
 				C887EDAE21EF45C600D627D9 /* Info.plist */,
 			);
@@ -170,6 +180,7 @@
 		C887EDC521EF486800D627D9 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				C887EE0821EF90FF00D627D9 /* Reachability Manager */,
 				C887EDC621EF487700D627D9 /* Health Manager */,
 			);
 			path = Managers;
@@ -279,6 +290,24 @@
 				C887EE0121EF8FE500D627D9 /* Goals.json */,
 			);
 			path = "Simulated Response";
+			sourceTree = "<group>";
+		};
+		C887EE0321EF903D00D627D9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C887EE0621EF906200D627D9 /* NetworkTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C887EE0821EF90FF00D627D9 /* Reachability Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C887EE0B21EF90FF00D627D9 /* Reachability.h */,
+				C887EE0921EF90FF00D627D9 /* Reachability.m */,
+				C887EE0A21EF90FF00D627D9 /* ReachabilityManager.swift */,
+			);
+			path = "Reachability Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +423,7 @@
 				C887ED9A21EF45C400D627D9 /* ViewController.swift in Sources */,
 				C887EDC821EF488900D627D9 /* HealthManager.swift in Sources */,
 				C887EDFD21EF8E0600D627D9 /* GoalResponse.swift in Sources */,
+				C887EE0D21EF90FF00D627D9 /* ReachabilityManager.swift in Sources */,
 				C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */,
 				C887EDCD21EF52CD00D627D9 /* HealthProtocols.swift in Sources */,
 				C887EDFF21EF8EC800D627D9 /* GoalsRequest.swift in Sources */,
@@ -406,6 +436,7 @@
 				C887EDD021EF556A00D627D9 /* Device.swift in Sources */,
 				C887EDF321EF8D8C00D627D9 /* EndPoint.swift in Sources */,
 				C887EDEE21EF8D8C00D627D9 /* NetworkHeaders.swift in Sources */,
+				C887EE0C21EF90FF00D627D9 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C887EE0721EF906200D627D9 /* NetworkTests.swift in Sources */,
 				C887EDCB21EF497600D627D9 /* HealthManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +622,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pijp.iHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iHealth/iHealth-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -609,6 +642,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pijp.iHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iHealth/iHealth-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
