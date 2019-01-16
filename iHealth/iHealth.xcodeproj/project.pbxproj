@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DF48122BB365C853A38495A /* Pods_iHealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DD8E2C52EAF83E0E978B10 /* Pods_iHealth.framework */; };
+		8635A5D71895FF0CC22D1318 /* Pods_iHealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */; };
 		C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887ED9721EF45C400D627D9 /* AppDelegate.swift */; };
 		C887ED9A21EF45C400D627D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887ED9921EF45C400D627D9 /* ViewController.swift */; };
 		C887ED9D21EF45C400D627D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887ED9B21EF45C400D627D9 /* Main.storyboard */; };
@@ -51,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		098961E91F302350A1CF8379 /* Pods-iHealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHealthTests/Pods-iHealthTests.release.xcconfig"; sourceTree = "<group>"; };
+		17DD8E2C52EAF83E0E978B10 /* Pods_iHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80638E1C970545C0757E3D28 /* Pods-iHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iHealth/Pods-iHealth.debug.xcconfig"; sourceTree = "<group>"; };
+		99AAC1C6FDE0804E8D95A577 /* Pods-iHealthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealthTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iHealthTests/Pods-iHealthTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C887ED9421EF45C400D627D9 /* iHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C887ED9721EF45C400D627D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C887ED9921EF45C400D627D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +98,8 @@
 		C887EE1521EF99AB00D627D9 /* GoalsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsPresenter.swift; sourceTree = "<group>"; };
 		C887EE1721EF99B600D627D9 /* GoalsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsInteractor.swift; sourceTree = "<group>"; };
 		C887EE1921EF99C100D627D9 /* GoalsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRouter.swift; sourceTree = "<group>"; };
+		ECC7A634273DAD5ACB8762D3 /* Pods-iHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHealth/Pods-iHealth.release.xcconfig"; sourceTree = "<group>"; };
+		FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C887EDB921EF45FC00D627D9 /* HealthKit.framework in Frameworks */,
+				4DF48122BB365C853A38495A /* Pods_iHealth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,12 +116,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8635A5D71895FF0CC22D1318 /* Pods_iHealthTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		134D8CE6B95B48E91694CB88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80638E1C970545C0757E3D28 /* Pods-iHealth.debug.xcconfig */,
+				ECC7A634273DAD5ACB8762D3 /* Pods-iHealth.release.xcconfig */,
+				99AAC1C6FDE0804E8D95A577 /* Pods-iHealthTests.debug.xcconfig */,
+				098961E91F302350A1CF8379 /* Pods-iHealthTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C887ED8B21EF45C400D627D9 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +141,7 @@
 				C887EDAB21EF45C600D627D9 /* iHealthTests */,
 				C887ED9521EF45C400D627D9 /* Products */,
 				C887EDB721EF45FC00D627D9 /* Frameworks */,
+				134D8CE6B95B48E91694CB88 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				C887EDB821EF45FC00D627D9 /* HealthKit.framework */,
+				17DD8E2C52EAF83E0E978B10 /* Pods_iHealth.framework */,
+				FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -348,9 +372,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C887EDB121EF45C600D627D9 /* Build configuration list for PBXNativeTarget "iHealth" */;
 			buildPhases = (
+				7E48A0536C7741DA6B8F4CB0 /* [CP] Check Pods Manifest.lock */,
 				C887ED9021EF45C400D627D9 /* Sources */,
 				C887ED9121EF45C400D627D9 /* Frameworks */,
 				C887ED9221EF45C400D627D9 /* Resources */,
+				33C28EDC1D013101F634E623 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,9 +391,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C887EDB421EF45C600D627D9 /* Build configuration list for PBXNativeTarget "iHealthTests" */;
 			buildPhases = (
+				4A6DD6ECF036AD807039572F /* [CP] Check Pods Manifest.lock */,
 				C887EDA421EF45C500D627D9 /* Sources */,
 				C887EDA521EF45C500D627D9 /* Frameworks */,
 				C887EDA621EF45C500D627D9 /* Resources */,
+				A46ADE4C81CCCA6405ADAD42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -444,6 +472,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33C28EDC1D013101F634E623 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iHealth/Pods-iHealth-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iHealth/Pods-iHealth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A6DD6ECF036AD807039572F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iHealthTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E48A0536C7741DA6B8F4CB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iHealth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A46ADE4C81CCCA6405ADAD42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iHealthTests/Pods-iHealthTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iHealthTests/Pods-iHealthTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C887ED9021EF45C400D627D9 /* Sources */ = {
@@ -646,6 +765,7 @@
 		};
 		C887EDB221EF45C600D627D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80638E1C970545C0757E3D28 /* Pods-iHealth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iHealth/iHealth.entitlements;
@@ -666,6 +786,7 @@
 		};
 		C887EDB321EF45C600D627D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECC7A634273DAD5ACB8762D3 /* Pods-iHealth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iHealth/iHealth.entitlements;
@@ -686,6 +807,7 @@
 		};
 		C887EDB521EF45C600D627D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99AAC1C6FDE0804E8D95A577 /* Pods-iHealthTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -707,6 +829,7 @@
 		};
 		C887EDB621EF45C600D627D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098961E91F302350A1CF8379 /* Pods-iHealthTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
