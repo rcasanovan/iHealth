@@ -51,5 +51,21 @@ class HealthManagerTests: XCTestCase {
         
         self.waitForExpectations(timeout: 25.0, handler: nil)
     }
+    
+    func testGetDistance() {
+        XCTAssert(Device.isSimulator == false, "You need to run the app in a real device")
+        
+        let stepsExpectation: XCTestExpectation = self.expectation(description: "stepsExpectation")
+        
+        HealthManager.shared.requestAuthorization { (success, error) in
+            XCTAssertNil(error, "Error getting the user permission")
+            HealthManager.shared.getDistance(completion: { (steps, success, error) in
+                XCTAssertTrue(success, "Error getting the user steps")
+                stepsExpectation.fulfill()
+            })
+        }
+        
+        self.waitForExpectations(timeout: 25.0, handler: nil)
+    }
 
 }

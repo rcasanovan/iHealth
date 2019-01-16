@@ -63,4 +63,25 @@ extension HealthManager: HealthDelegate {
         store.execute(query)
     }
     
+    func getDistance(completion: @escaping HealthGetStepsCompletionBlock) {
+        guard let quantityType = HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning) else {
+            completion(0, false, nil)
+            return
+        }
+        
+        let now = Date()
+        let startOfDay = Calendar.current.startOfDay(for: now)
+        let predicate = HKQuery.predicateForSamples(withStart: startOfDay, end: now, options: .strictStartDate)
+        
+        let query = HKStatisticsQuery(quantityType: quantityType, quantitySamplePredicate: predicate, options: .cumulativeSum) { _, result, _ in
+            guard let result = result, let sum = result.sumQuantity() else {
+                completion(0.0, false, nil)
+                return
+            }
+            completion(sum.doubleValue(for: HKUnit.meter()), true, nil)
+        }
+        
+        store.execute(query)
+    }
+    
 }
