@@ -8,6 +8,12 @@
 
 import Foundation
 
+enum GoalType: String {
+    case step = "step"
+    case walking = "walking_distance"
+    case running = "running_distance"
+}
+
 public struct GoalsResponse: Decodable {
     
     let items: [GoalResponse]

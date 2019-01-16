@@ -39,8 +39,8 @@ class GoalTableViewCell: UITableViewCell {
         titleLabel.text = viewModel.title
         subtitleLabel.text = viewModel.description
         subtitleLabel.numberOfLines = 0
-        valueTitleLabel.text = "500"
-        valueSubtitleLabel.text = "steps"
+        valueTitleLabel.text = viewModel.goal
+        valueSubtitleLabel.text = viewModel.goalType
         layoutSubviews()
     }
     
@@ -127,13 +127,15 @@ extension GoalTableViewCell {
         }
         
         struct ValueTitleLabel {
-            static let trailing: CGFloat = 10.0
+            static let trailing: CGFloat = 5.0
             static let bottom: CGFloat = 10.0
+            static let width: CGFloat = 80.0
         }
         
         struct ValueSubtitleLabel {
             static let trailing: CGFloat = 10.0
-            static let bottom: CGFloat = 10.0
+            static let bottom: CGFloat = 13.0
+            static let width: CGFloat = 40.0
         }
         
     }
@@ -161,10 +163,10 @@ extension GoalTableViewCell {
         goalBackgroundView.addConstraintsWithFormat("H:[v0]-\(Layout.SubtitleLabel.leading)-[v1]-\(Layout.SubtitleLabel.trailing)-[v2]", views: goalImageView, subtitleLabel, valueTitleLabel)
         goalBackgroundView.addConstraintsWithFormat("V:[v0]-\(Layout.SubtitleLabel.top)-[v1(>=0.0)]-\(Layout.SubtitleLabel.bottom)-|", views: titleLabel, subtitleLabel)
         
-        goalBackgroundView.addConstraintsWithFormat("H:[v0(>=0.0)]-\(Layout.ValueTitleLabel.trailing)-[v1]", views: valueTitleLabel, valueSubtitleLabel)
+        goalBackgroundView.addConstraintsWithFormat("H:[v0(\(Layout.ValueTitleLabel.width))]-\(Layout.ValueTitleLabel.trailing)-[v1]", views: valueTitleLabel, valueSubtitleLabel)
         goalBackgroundView.addConstraintsWithFormat("V:[v0(>=0.0)]-\(Layout.ValueTitleLabel.bottom)-|", views: valueTitleLabel)
         
-        goalBackgroundView.addConstraintsWithFormat("H:[v0(>=0.0)]-\(Layout.ValueSubtitleLabel.trailing)-|", views: valueSubtitleLabel)
+        goalBackgroundView.addConstraintsWithFormat("H:[v0(\(Layout.ValueSubtitleLabel.width))]-\(Layout.ValueSubtitleLabel.trailing)-|", views: valueSubtitleLabel)
         goalBackgroundView.addConstraintsWithFormat("V:[v0(>=0.0)]-\(Layout.ValueSubtitleLabel.bottom)-|", views: valueSubtitleLabel)
     }
     
