@@ -22,5 +22,13 @@ class HealthManagerTests: XCTestCase {
     func testSharedInstance() {
         XCTAssertNotNil(HealthManager.shared, "Impossible to get the shared instance")
     }
+    
+    func testRequestAuthorization() {
+        XCTAssert(Device.isSimulator == false, "You need to run the app in a real device")
+        
+        HealthManager.shared.requestAuthorization { (success, error) in
+            XCTAssertNotNil(error, "Error getting the user permission")
+        }
+    }
 
 }

@@ -7,3 +7,4 @@
 */
 
 "NSHealthShareUsageDescription" = "iHealth needs your permission to get access to your health data";
+"NSHealthUpdateUsageDescription" = "iHealth needs your permission to update to your health data";

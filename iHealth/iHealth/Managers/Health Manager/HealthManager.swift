@@ -29,7 +29,7 @@ extension HealthManager: HealthDelegate {
             return
         }
         
-        guard   let running = HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning) else {
+        guard let running = HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning) else {
             completion(false, nil)
             return
         }

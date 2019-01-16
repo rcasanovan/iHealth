@@ -12,12 +12,13 @@
 		C887ED9D21EF45C400D627D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887ED9B21EF45C400D627D9 /* Main.storyboard */; };
 		C887ED9F21EF45C500D627D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C887ED9E21EF45C500D627D9 /* Assets.xcassets */; };
 		C887EDA221EF45C500D627D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887EDA021EF45C500D627D9 /* LaunchScreen.storyboard */; };
-		C887EDAD21EF45C600D627D9 /* iHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDAC21EF45C600D627D9 /* iHealthTests.swift */; };
 		C887EDB921EF45FC00D627D9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C887EDB821EF45FC00D627D9 /* HealthKit.framework */; };
-		C887EDBF21EF47B800D627D9 /* InfoPList.strings in Resources */ = {isa = PBXBuildFile; fileRef = C887EDC121EF47B800D627D9 /* InfoPList.strings */; };
+		C887EDBF21EF47B800D627D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C887EDC121EF47B800D627D9 /* InfoPlist.strings */; };
 		C887EDC821EF488900D627D9 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDC721EF488900D627D9 /* HealthManager.swift */; };
 		C887EDCB21EF497600D627D9 /* HealthManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDCA21EF497600D627D9 /* HealthManagerTests.swift */; };
 		C887EDCD21EF52CD00D627D9 /* HealthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDCC21EF52CD00D627D9 /* HealthProtocols.swift */; };
+		C887EDD021EF556A00D627D9 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDCF21EF556A00D627D9 /* Device.swift */; };
+		C887EDD421EF583A00D627D9 /* GoalsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDD321EF583A00D627D9 /* GoalsProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,17 +40,18 @@
 		C887EDA121EF45C500D627D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C887EDA321EF45C500D627D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C887EDA821EF45C500D627D9 /* iHealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iHealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C887EDAC21EF45C600D627D9 /* iHealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iHealthTests.swift; sourceTree = "<group>"; };
 		C887EDAE21EF45C600D627D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C887EDB821EF45FC00D627D9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		C887EDBA21EF461F00D627D9 /* iHealth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iHealth.entitlements; sourceTree = "<group>"; };
-		C887EDC021EF47B800D627D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPList.strings; sourceTree = "<group>"; };
+		C887EDC021EF47B800D627D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C887EDC221EF47E200D627D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		C887EDC321EF47E200D627D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		C887EDC421EF47E200D627D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPList.strings; sourceTree = "<group>"; };
+		C887EDC421EF47E200D627D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C887EDC721EF488900D627D9 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		C887EDCA21EF497600D627D9 /* HealthManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManagerTests.swift; sourceTree = "<group>"; };
 		C887EDCC21EF52CD00D627D9 /* HealthProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProtocols.swift; sourceTree = "<group>"; };
+		C887EDCF21EF556A00D627D9 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		C887EDD321EF583A00D627D9 /* GoalsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,8 @@
 				C887ED9721EF45C400D627D9 /* AppDelegate.swift */,
 				C887ED9921EF45C400D627D9 /* ViewController.swift */,
 				C887ED9B21EF45C400D627D9 /* Main.storyboard */,
+				C887EDD121EF580F00D627D9 /* Views */,
+				C887EDCE21EF555C00D627D9 /* Utils */,
 				C887EDC521EF486800D627D9 /* Managers */,
 				C887EDBB21EF476B00D627D9 /* Resources */,
 				C887ED9E21EF45C500D627D9 /* Assets.xcassets */,
@@ -110,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				C887EDC921EF495B00D627D9 /* Health Manager */,
-				C887EDAC21EF45C600D627D9 /* iHealthTests.swift */,
 				C887EDAE21EF45C600D627D9 /* Info.plist */,
 			);
 			path = iHealthTests;
@@ -135,7 +138,7 @@
 		C887EDBC21EF478C00D627D9 /* Localizable Strings */ = {
 			isa = PBXGroup;
 			children = (
-				C887EDC121EF47B800D627D9 /* InfoPList.strings */,
+				C887EDC121EF47B800D627D9 /* InfoPlist.strings */,
 			);
 			path = "Localizable Strings";
 			sourceTree = "<group>";
@@ -163,6 +166,30 @@
 				C887EDCA21EF497600D627D9 /* HealthManagerTests.swift */,
 			);
 			path = "Health Manager";
+			sourceTree = "<group>";
+		};
+		C887EDCE21EF555C00D627D9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C887EDCF21EF556A00D627D9 /* Device.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C887EDD121EF580F00D627D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C887EDD221EF582200D627D9 /* Goals */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C887EDD221EF582200D627D9 /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				C887EDD321EF583A00D627D9 /* GoalsProtocols.swift */,
+			);
+			path = Goals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C887EDA221EF45C500D627D9 /* LaunchScreen.storyboard in Resources */,
-				C887EDBF21EF47B800D627D9 /* InfoPList.strings in Resources */,
+				C887EDBF21EF47B800D627D9 /* InfoPlist.strings in Resources */,
 				C887ED9F21EF45C500D627D9 /* Assets.xcassets in Resources */,
 				C887ED9D21EF45C400D627D9 /* Main.storyboard in Resources */,
 			);
@@ -277,6 +304,8 @@
 				C887EDC821EF488900D627D9 /* HealthManager.swift in Sources */,
 				C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */,
 				C887EDCD21EF52CD00D627D9 /* HealthProtocols.swift in Sources */,
+				C887EDD421EF583A00D627D9 /* GoalsProtocols.swift in Sources */,
+				C887EDD021EF556A00D627D9 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +313,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C887EDAD21EF45C600D627D9 /* iHealthTests.swift in Sources */,
 				C887EDCB21EF497600D627D9 /* HealthManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,13 +346,13 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		C887EDC121EF47B800D627D9 /* InfoPList.strings */ = {
+		C887EDC121EF47B800D627D9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C887EDC021EF47B800D627D9 /* en */,
 				C887EDC421EF47E200D627D9 /* es */,
 			);
-			name = InfoPList.strings;
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
