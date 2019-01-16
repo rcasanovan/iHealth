@@ -43,7 +43,7 @@ class HealthManagerTests: XCTestCase {
         
         HealthManager.shared.requestAuthorization { (success, error) in
             XCTAssertNil(error, "Error getting the user permission")
-            HealthManager.shared.getValueForType(.steps, completion: { (steps, success, error) in
+            HealthManager.shared.getValueForType(.steps, completion: { (value, success) in
                 XCTAssertTrue(success, "Error getting the user steps")
                 stepsExpectation.fulfill()
             })
@@ -59,8 +59,8 @@ class HealthManagerTests: XCTestCase {
         
         HealthManager.shared.requestAuthorization { (success, error) in
             XCTAssertNil(error, "Error getting the user permission")
-            HealthManager.shared.getValueForType(.distance, completion: { (steps, success, error) in
-                XCTAssertTrue(success, "Error getting the user steps")
+            HealthManager.shared.getValueForType(.distance, completion: { (value, success) in
+                XCTAssertTrue(success, "Error getting the user walking / running distance")
                 stepsExpectation.fulfill()
             })
         }

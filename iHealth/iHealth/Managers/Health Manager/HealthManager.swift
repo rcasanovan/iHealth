@@ -71,7 +71,7 @@ extension HealthManager: HealthDelegate {
     
     func getValueForType(_ type: HealthValueType, completion: @escaping HealthGetValueCompletionBlock) {
         guard let quantityType = HKQuantityType.quantityType(forIdentifier: getIdentifierForType(type)) else {
-            completion(0, false, nil)
+            completion(0, false)
             return
         }
         
@@ -81,10 +81,10 @@ extension HealthManager: HealthDelegate {
         
         let query = HKStatisticsQuery(quantityType: quantityType, quantitySamplePredicate: predicate, options: .cumulativeSum) { _, result, _ in
             guard let result = result, let sum = result.sumQuantity() else {
-                completion(0.0, false, nil)
+                completion(0.0, false)
                 return
             }
-            completion(sum.doubleValue(for: self.getUnitForType(type)), true, nil)
+            completion(sum.doubleValue(for: self.getUnitForType(type)), true)
         }
         
         store.execute(query)
