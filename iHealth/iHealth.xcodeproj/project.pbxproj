@@ -16,6 +16,7 @@
 		C887EDB921EF45FC00D627D9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C887EDB821EF45FC00D627D9 /* HealthKit.framework */; };
 		C887EDBF21EF47B800D627D9 /* InfoPList.strings in Resources */ = {isa = PBXBuildFile; fileRef = C887EDC121EF47B800D627D9 /* InfoPList.strings */; };
 		C887EDC821EF488900D627D9 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDC721EF488900D627D9 /* HealthManager.swift */; };
+		C887EDCB21EF497600D627D9 /* HealthManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDCA21EF497600D627D9 /* HealthManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		C887EDC321EF47E200D627D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		C887EDC421EF47E200D627D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPList.strings; sourceTree = "<group>"; };
 		C887EDC721EF488900D627D9 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		C887EDCA21EF497600D627D9 /* HealthManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		C887EDAB21EF45C600D627D9 /* iHealthTests */ = {
 			isa = PBXGroup;
 			children = (
+				C887EDC921EF495B00D627D9 /* Health Manager */,
 				C887EDAC21EF45C600D627D9 /* iHealthTests.swift */,
 				C887EDAE21EF45C600D627D9 /* Info.plist */,
 			);
@@ -147,6 +150,14 @@
 			isa = PBXGroup;
 			children = (
 				C887EDC721EF488900D627D9 /* HealthManager.swift */,
+			);
+			path = "Health Manager";
+			sourceTree = "<group>";
+		};
+		C887EDC921EF495B00D627D9 /* Health Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C887EDCA21EF497600D627D9 /* HealthManagerTests.swift */,
 			);
 			path = "Health Manager";
 			sourceTree = "<group>";
@@ -270,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C887EDAD21EF45C600D627D9 /* iHealthTests.swift in Sources */,
+				C887EDCB21EF497600D627D9 /* HealthManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
