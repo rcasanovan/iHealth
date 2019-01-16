@@ -17,6 +17,7 @@
 		C858A05621EFA56B000321DC /* MyGoalsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A05521EFA56B000321DC /* MyGoalsRouter.swift */; };
 		C858A05921EFA7D4000321DC /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A05821EFA7D4000321DC /* MainTabBar.swift */; };
 		C858A05D21EFB25F000321DC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A05C21EFB25F000321DC /* UIView.swift */; };
+		C858A06021EFB300000321DC /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A05F21EFB300000321DC /* GoalTableViewCell.swift */; };
 		C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887ED9721EF45C400D627D9 /* AppDelegate.swift */; };
 		C887ED9F21EF45C500D627D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C887ED9E21EF45C500D627D9 /* Assets.xcassets */; };
 		C887EDA221EF45C500D627D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887EDA021EF45C500D627D9 /* LaunchScreen.storyboard */; };
@@ -71,6 +72,7 @@
 		C858A05521EFA56B000321DC /* MyGoalsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsRouter.swift; sourceTree = "<group>"; };
 		C858A05821EFA7D4000321DC /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		C858A05C21EFB25F000321DC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		C858A05F21EFB300000321DC /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 		C887ED9421EF45C400D627D9 /* iHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C887ED9721EF45C400D627D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C887ED9E21EF45C500D627D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +181,14 @@
 				C858A05C21EFB25F000321DC /* UIView.swift */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		C858A05E21EFB2EF000321DC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C858A05F21EFB300000321DC /* GoalTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C887ED8B21EF45C400D627D9 = {
@@ -305,6 +315,7 @@
 		C887EDD221EF582200D627D9 /* Goals */ = {
 			isa = PBXGroup;
 			children = (
+				C858A05E21EFB2EF000321DC /* Cell */,
 				C887EE1021EF972B00D627D9 /* View Model */,
 				C887EDD321EF583A00D627D9 /* GoalsProtocols.swift */,
 				C887EE1321EF99A100D627D9 /* GoalsViewController.swift */,
@@ -639,6 +650,7 @@
 				C887EDF121EF8D8C00D627D9 /* RequestErrors.swift in Sources */,
 				C887EDD421EF583A00D627D9 /* GoalsProtocols.swift in Sources */,
 				C887EE1A21EF99C100D627D9 /* GoalsRouter.swift in Sources */,
+				C858A06021EFB300000321DC /* GoalTableViewCell.swift in Sources */,
 				C858A04F21EFA3D3000321DC /* MyGoalsViewController.swift in Sources */,
 				C858A05421EFA55F000321DC /* MyGoalsInteractor.swift in Sources */,
 				C887EE1621EF99AB00D627D9 /* GoalsPresenter.swift in Sources */,
