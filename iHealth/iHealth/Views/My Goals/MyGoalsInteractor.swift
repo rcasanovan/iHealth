@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class MyGoalsInteractor {
+    
+    init() {
+    }
+    
+}
+
+extension MyGoalsInteractor: MyGoalsInteractorDelegate {
+    
+}

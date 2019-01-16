@@ -6,4 +6,19 @@
 //  Copyright © 2019 Pijp. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class MyGoalsViewController: BaseViewController {
+    
+    public var presenter: MyGoalsPresenterDelegate?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        presenter?.viewDidLoad()
+    }
+    
+}
+
+extension MyGoalsViewController: MyGoalsViewInjection {
+    
+}

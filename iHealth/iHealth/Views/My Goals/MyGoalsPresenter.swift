@@ -7,3 +7,23 @@
 //
 
 import Foundation
+
+class MyGoalsPresenter {
+    
+    private weak var view: MyGoalsViewInjection?
+    private let interactor: MyGoalsInteractorDelegate
+    
+    // MARK - Lifecycle
+    init(view: MyGoalsViewInjection, navigationController: UINavigationController? = nil) {
+        self.view = view
+        self.interactor = MyGoalsInteractor()
+    }
+    
+}
+
+extension MyGoalsPresenter: MyGoalsPresenterDelegate {
+    
+    func viewDidLoad() {
+    }
+    
+}

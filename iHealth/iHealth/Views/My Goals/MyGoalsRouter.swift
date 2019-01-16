@@ -6,4 +6,14 @@
 //  Copyright © 2019 Pijp. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class MyGoalsRouter {
+    
+    public static func setupModule(navigationController: UINavigationController? = nil) -> MyGoalsViewController {
+        let myGoalsVC = MyGoalsViewController()
+        myGoalsVC.presenter = MyGoalsPresenter(view: myGoalsVC, navigationController: navigationController)
+        return myGoalsVC
+    }
+    
+}
