@@ -17,6 +17,7 @@
 		C887EDBF21EF47B800D627D9 /* InfoPList.strings in Resources */ = {isa = PBXBuildFile; fileRef = C887EDC121EF47B800D627D9 /* InfoPList.strings */; };
 		C887EDC821EF488900D627D9 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDC721EF488900D627D9 /* HealthManager.swift */; };
 		C887EDCB21EF497600D627D9 /* HealthManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDCA21EF497600D627D9 /* HealthManagerTests.swift */; };
+		C887EDCD21EF52CD00D627D9 /* HealthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EDCC21EF52CD00D627D9 /* HealthProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C887EDC421EF47E200D627D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPList.strings; sourceTree = "<group>"; };
 		C887EDC721EF488900D627D9 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		C887EDCA21EF497600D627D9 /* HealthManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManagerTests.swift; sourceTree = "<group>"; };
+		C887EDCC21EF52CD00D627D9 /* HealthProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		C887EDC621EF487700D627D9 /* Health Manager */ = {
 			isa = PBXGroup;
 			children = (
+				C887EDCC21EF52CD00D627D9 /* HealthProtocols.swift */,
 				C887EDC721EF488900D627D9 /* HealthManager.swift */,
 			);
 			path = "Health Manager";
@@ -273,6 +276,7 @@
 				C887ED9A21EF45C400D627D9 /* ViewController.swift in Sources */,
 				C887EDC821EF488900D627D9 /* HealthManager.swift in Sources */,
 				C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */,
+				C887EDCD21EF52CD00D627D9 /* HealthProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
