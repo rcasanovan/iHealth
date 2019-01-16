@@ -10,4 +10,15 @@ import Foundation
 
 class GoalsViewController: BaseViewController {
     
+    public var presenter: GoalsPresenterDelegate?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        presenter?.viewDidLoad()
+    }
+    
+}
+
+extension GoalsViewController: GoalsViewInjection {
+    
 }

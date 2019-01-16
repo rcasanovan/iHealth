@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+class GoalsInteractor {
+    
+    private let requestManager: RequestManager
+    private var goalsViewModel: [GoalViewModel]
+    
+    init() {
+        goalsViewModel = []
+        requestManager = RequestManager()
+    }
+    
+}
+
+extension GoalsInteractor: GoalsInteractorDelegate {
+    
+    func getGoals(completion: @escaping GoalsGetGoalsCompletionBlock) {
+    }
+    
+}
