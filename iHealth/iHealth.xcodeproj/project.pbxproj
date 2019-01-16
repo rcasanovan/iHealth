@@ -224,6 +224,7 @@
 		C887EDD121EF580F00D627D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C887EE1B21EF9B4700D627D9 /* Base */,
 				C887EDD221EF582200D627D9 /* Goals */,
 			);
 			path = Views;
@@ -331,6 +332,13 @@
 				C887EE1121EF974000D627D9 /* GoalViewModel.swift */,
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		C887EE1B21EF9B4700D627D9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
