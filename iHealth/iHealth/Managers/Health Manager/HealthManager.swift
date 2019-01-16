@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class HealthManager: NSObject {
+    
+    static let shared: HealthManager = { return HealthManager() }()
+
+}
