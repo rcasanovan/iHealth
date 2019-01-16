@@ -19,6 +19,8 @@
 		C858A05D21EFB25F000321DC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A05C21EFB25F000321DC /* UIView.swift */; };
 		C858A06021EFB300000321DC /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A05F21EFB300000321DC /* GoalTableViewCell.swift */; };
 		C858A06221EFB3C8000321DC /* GoalsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A06121EFB3C8000321DC /* GoalsDatasource.swift */; };
+		C858A06E21EFBABE000321DC /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A06D21EFBABE000321DC /* GradientView.swift */; };
+		C858A07121EFBB1D000321DC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A07021EFBB1D000321DC /* UIColor.swift */; };
 		C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887ED9721EF45C400D627D9 /* AppDelegate.swift */; };
 		C887ED9F21EF45C500D627D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C887ED9E21EF45C500D627D9 /* Assets.xcassets */; };
 		C887EDA221EF45C500D627D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887EDA021EF45C500D627D9 /* LaunchScreen.storyboard */; };
@@ -75,6 +77,8 @@
 		C858A05C21EFB25F000321DC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		C858A05F21EFB300000321DC /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 		C858A06121EFB3C8000321DC /* GoalsDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsDatasource.swift; sourceTree = "<group>"; };
+		C858A06D21EFBABE000321DC /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		C858A07021EFBB1D000321DC /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		C887ED9421EF45C400D627D9 /* iHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C887ED9721EF45C400D627D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C887ED9E21EF45C500D627D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 		C858A05A21EFB24A000321DC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C858A06F21EFBB12000321DC /* UIColor */,
 				C858A05B21EFB252000321DC /* UIView */,
 			);
 			path = Extensions;
@@ -191,6 +196,30 @@
 				C858A05F21EFB300000321DC /* GoalTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C858A06521EFB992000321DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C858A06C21EFBAAE000321DC /* Gradient View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C858A06C21EFBAAE000321DC /* Gradient View */ = {
+			isa = PBXGroup;
+			children = (
+				C858A06D21EFBABE000321DC /* GradientView.swift */,
+			);
+			path = "Gradient View";
+			sourceTree = "<group>";
+		};
+		C858A06F21EFBB12000321DC /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				C858A07021EFBB1D000321DC /* UIColor.swift */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 		C887ED8B21EF45C400D627D9 = {
@@ -317,6 +346,7 @@
 		C887EDD221EF582200D627D9 /* Goals */ = {
 			isa = PBXGroup;
 			children = (
+				C858A06521EFB992000321DC /* Views */,
 				C858A05E21EFB2EF000321DC /* Cell */,
 				C887EE1021EF972B00D627D9 /* View Model */,
 				C887EDD321EF583A00D627D9 /* GoalsProtocols.swift */,
@@ -653,6 +683,8 @@
 				C858A05921EFA7D4000321DC /* MainTabBar.swift in Sources */,
 				C887EDF121EF8D8C00D627D9 /* RequestErrors.swift in Sources */,
 				C887EDD421EF583A00D627D9 /* GoalsProtocols.swift in Sources */,
+				C858A06E21EFBABE000321DC /* GradientView.swift in Sources */,
+				C858A07121EFBB1D000321DC /* UIColor.swift in Sources */,
 				C887EE1A21EF99C100D627D9 /* GoalsRouter.swift in Sources */,
 				C858A06021EFB300000321DC /* GoalTableViewCell.swift in Sources */,
 				C858A04F21EFA3D3000321DC /* MyGoalsViewController.swift in Sources */,

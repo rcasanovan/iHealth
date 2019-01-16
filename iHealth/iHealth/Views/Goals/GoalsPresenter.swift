@@ -32,6 +32,7 @@ extension GoalsPresenter {
             self.view?.showProgress(false)
             
             if let goals = goals {
+                self.view?.loadGoals(goals)
                 return
             }
             

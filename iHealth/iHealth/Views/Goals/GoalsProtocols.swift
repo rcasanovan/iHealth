@@ -13,6 +13,7 @@ protocol GoalsViewInjection : class {
     func showProgress(_ show: Bool, status: String)
     func showProgress(_ show: Bool)
     func showMessageWith(title: String, message: String, actionTitle: String)
+    func loadGoals(_ viewModels: [GoalViewModel])
 }
 
 protocol GoalsPresenterDelegate : class {

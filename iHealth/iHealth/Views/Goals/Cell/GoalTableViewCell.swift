@@ -10,6 +10,8 @@ import UIKit
 
 class GoalTableViewCell: UITableViewCell {
     
+    private let goalBackgroundView: GradientView = GradientView()
+    
     static public var identifier: String {
         return String(describing: self)
     }
@@ -29,6 +31,12 @@ class GoalTableViewCell: UITableViewCell {
     }
     
     public func bindWithViewModel(_ viewModel: GoalViewModel) {
+        layoutSubviews()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        goalBackgroundView.roundCorners(corners: [.topLeft, .topRight, .bottomLeft, .bottomRight], radius: 15.0)
     }
     
 }
@@ -40,7 +48,7 @@ extension GoalTableViewCell {
      * SetupViews
      */
     private func setupViews() {
-        backgroundColor = .yellow
+        backgroundColor = .white
         selectionStyle = .none
         
         configureSubviews()
@@ -50,7 +58,8 @@ extension GoalTableViewCell {
     /**
      * ConfigureSubviews
      */
-    private func configureSubviews() {
+    private func configureSubviews() {        
+        goalBackgroundView.colors = [UIColor.colorWithHex(hex: "#ff6855").cgColor, UIColor.colorWithHex(hex: "#fe5c46").cgColor, UIColor.colorWithHex(hex: "#ff5350").cgColor, UIColor.colorWithHex(hex: "#fe4e36").cgColor]
     }
     
 }
@@ -63,7 +72,12 @@ extension GoalTableViewCell {
      */
     private struct Layout {
         
-        static let bottom: CGFloat = 10.0
+        struct GoalBackgroundView {
+            static let leading: CGFloat = 16.0
+            static let trailing: CGFloat = 16.0
+            static let top: CGFloat = 16.0
+            static let height: CGFloat = 80.0
+        }
         
     }
     
@@ -71,6 +85,10 @@ extension GoalTableViewCell {
      * Add subviews
      */
     private func addSubviews() {
+        addSubview(goalBackgroundView)
+        
+        addConstraintsWithFormat("H:|-\(Layout.GoalBackgroundView.leading)-[v0]-\(Layout.GoalBackgroundView.trailing)-|", views: goalBackgroundView)
+        addConstraintsWithFormat("V:|-\(Layout.GoalBackgroundView.top)-[v0(\(Layout.GoalBackgroundView.height))]|", views: goalBackgroundView)
     }
     
 }
