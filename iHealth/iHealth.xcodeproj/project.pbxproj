@@ -60,6 +60,7 @@
 		C887EE1821EF99B600D627D9 /* GoalsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1721EF99B600D627D9 /* GoalsInteractor.swift */; };
 		C887EE1A21EF99C100D627D9 /* GoalsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1921EF99C100D627D9 /* GoalsRouter.swift */; };
 		C8C0C4C221F148100058EF7A /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C0C4C121F148100058EF7A /* ShareView.swift */; };
+		C8C0C4C521F14A0B0058EF7A /* ShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C0C4C421F14A0B0058EF7A /* ShareManager.swift */; };
 		C8F9438B21F09B5B0051A2EB /* CustomTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */; };
 		C8F9438F21F09F2B0051A2EB /* LocalGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9438E21F09F2B0051A2EB /* LocalGoal.swift */; };
 		C8F9439121F0A0AC0051A2EB /* LocalGoalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9439021F0A0AC0051A2EB /* LocalGoalManager.swift */; };
@@ -151,6 +152,7 @@
 		C887EE1721EF99B600D627D9 /* GoalsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsInteractor.swift; sourceTree = "<group>"; };
 		C887EE1921EF99C100D627D9 /* GoalsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRouter.swift; sourceTree = "<group>"; };
 		C8C0C4C121F148100058EF7A /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		C8C0C4C421F14A0B0058EF7A /* ShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareManager.swift; sourceTree = "<group>"; };
 		C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleView.swift; sourceTree = "<group>"; };
 		C8F9438E21F09F2B0051A2EB /* LocalGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGoal.swift; sourceTree = "<group>"; };
 		C8F9439021F0A0AC0051A2EB /* LocalGoalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGoalManager.swift; sourceTree = "<group>"; };
@@ -380,6 +382,7 @@
 		C887EDC521EF486800D627D9 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				C8C0C4C321F149FC0058EF7A /* Share Manager */,
 				C8F9438C21F09EF60051A2EB /* Local Goal Manager */,
 				C887EE0821EF90FF00D627D9 /* Reachability Manager */,
 				C887EDC621EF487700D627D9 /* Health Manager */,
@@ -546,6 +549,14 @@
 				C8C0C4C121F148100058EF7A /* ShareView.swift */,
 			);
 			path = "Share View";
+			sourceTree = "<group>";
+		};
+		C8C0C4C321F149FC0058EF7A /* Share Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C8C0C4C421F14A0B0058EF7A /* ShareManager.swift */,
+			);
+			path = "Share Manager";
 			sourceTree = "<group>";
 		};
 		C8F9438821F09B410051A2EB /* Common */ = {
@@ -930,6 +941,7 @@
 				C887EE1821EF99B600D627D9 /* GoalsInteractor.swift in Sources */,
 				C887EDEE21EF8D8C00D627D9 /* NetworkHeaders.swift in Sources */,
 				C887EE0C21EF90FF00D627D9 /* Reachability.m in Sources */,
+				C8C0C4C521F14A0B0058EF7A /* ShareManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
