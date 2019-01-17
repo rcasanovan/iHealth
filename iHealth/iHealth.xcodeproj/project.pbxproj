@@ -59,6 +59,7 @@
 		C887EE1621EF99AB00D627D9 /* GoalsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1521EF99AB00D627D9 /* GoalsPresenter.swift */; };
 		C887EE1821EF99B600D627D9 /* GoalsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1721EF99B600D627D9 /* GoalsInteractor.swift */; };
 		C887EE1A21EF99C100D627D9 /* GoalsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1921EF99C100D627D9 /* GoalsRouter.swift */; };
+		C8F9438B21F09B5B0051A2EB /* CustomTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		C887EE1521EF99AB00D627D9 /* GoalsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsPresenter.swift; sourceTree = "<group>"; };
 		C887EE1721EF99B600D627D9 /* GoalsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsInteractor.swift; sourceTree = "<group>"; };
 		C887EE1921EF99C100D627D9 /* GoalsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRouter.swift; sourceTree = "<group>"; };
+		C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleView.swift; sourceTree = "<group>"; };
 		ECC7A634273DAD5ACB8762D3 /* Pods-iHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHealth/Pods-iHealth.release.xcconfig"; sourceTree = "<group>"; };
 		FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -379,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				C887EE1B21EF9B4700D627D9 /* Base */,
+				C8F9438821F09B410051A2EB /* Common */,
 				C858A05721EFA7C3000321DC /* Main TabBar */,
 				C887EDD221EF582200D627D9 /* Goals */,
 				C858A04B21EFA3A2000321DC /* My Goals */,
@@ -499,6 +502,22 @@
 				C858A04921EF9C0F000321DC /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		C8F9438821F09B410051A2EB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C8F9438921F09B4A0051A2EB /* Custom Title View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C8F9438921F09B4A0051A2EB /* Custom Title View */ = {
+			isa = PBXGroup;
+			children = (
+				C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */,
+			);
+			path = "Custom Title View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -736,6 +755,7 @@
 				C887EDF121EF8D8C00D627D9 /* RequestErrors.swift in Sources */,
 				C887EDD421EF583A00D627D9 /* GoalsProtocols.swift in Sources */,
 				C858A06E21EFBABE000321DC /* GradientView.swift in Sources */,
+				C8F9438B21F09B5B0051A2EB /* CustomTitleView.swift in Sources */,
 				C858A07121EFBB1D000321DC /* UIColor.swift in Sources */,
 				C887EE1A21EF99C100D627D9 /* GoalsRouter.swift in Sources */,
 				C858A06021EFB300000321DC /* GoalTableViewCell.swift in Sources */,
