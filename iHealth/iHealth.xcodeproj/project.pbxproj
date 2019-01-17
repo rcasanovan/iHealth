@@ -67,6 +67,7 @@
 		C8F9439A21F0A9C70051A2EB /* GeneralMessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9439721F0A9C70051A2EB /* GeneralMessagePresenter.swift */; };
 		C8F9439B21F0A9C70051A2EB /* GeneralMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9439821F0A9C70051A2EB /* GeneralMessageViewController.swift */; };
 		C8F9439E21F0AA3B0051A2EB /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9439D21F0AA3B0051A2EB /* UIEdgeInsets.swift */; };
+		C8F943A121F0C6D30051A2EB /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943A021F0C6D30051A2EB /* GoalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,7 @@
 		C8F9439721F0A9C70051A2EB /* GeneralMessagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralMessagePresenter.swift; sourceTree = "<group>"; };
 		C8F9439821F0A9C70051A2EB /* GeneralMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralMessageViewController.swift; sourceTree = "<group>"; };
 		C8F9439D21F0AA3B0051A2EB /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
+		C8F943A021F0C6D30051A2EB /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		ECC7A634273DAD5ACB8762D3 /* Pods-iHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHealth/Pods-iHealth.release.xcconfig"; sourceTree = "<group>"; };
 		FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -237,6 +239,7 @@
 		C858A06521EFB992000321DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C8F9439F21F0C6C70051A2EB /* Goal View */,
 				C858A06C21EFBAAE000321DC /* Gradient View */,
 			);
 			path = Views;
@@ -581,6 +584,14 @@
 			path = UIEdgeInsets;
 			sourceTree = "<group>";
 		};
+		C8F9439F21F0C6C70051A2EB /* Goal View */ = {
+			isa = PBXGroup;
+			children = (
+				C8F943A021F0C6D30051A2EB /* GoalView.swift */,
+			);
+			path = "Goal View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -805,6 +816,7 @@
 				C858A04D21EFA3C4000321DC /* MyGoalsProtocols.swift in Sources */,
 				C858A08521EFC158000321DC /* UIFont.swift in Sources */,
 				C887EDFD21EF8E0600D627D9 /* GoalResponse.swift in Sources */,
+				C8F943A121F0C6D30051A2EB /* GoalView.swift in Sources */,
 				C887EE0D21EF90FF00D627D9 /* ReachabilityManager.swift in Sources */,
 				C858A04A21EF9C0F000321DC /* BaseViewController.swift in Sources */,
 				C887ED9821EF45C400D627D9 /* AppDelegate.swift in Sources */,
