@@ -62,6 +62,7 @@
 		C8F9438B21F09B5B0051A2EB /* CustomTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */; };
 		C8F9438F21F09F2B0051A2EB /* LocalGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9438E21F09F2B0051A2EB /* LocalGoal.swift */; };
 		C8F9439121F0A0AC0051A2EB /* LocalGoalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9439021F0A0AC0051A2EB /* LocalGoalManager.swift */; };
+		C8F9439421F0A4AF0051A2EB /* LocalGoalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9439321F0A4AF0051A2EB /* LocalGoalsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,7 @@
 		C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleView.swift; sourceTree = "<group>"; };
 		C8F9438E21F09F2B0051A2EB /* LocalGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGoal.swift; sourceTree = "<group>"; };
 		C8F9439021F0A0AC0051A2EB /* LocalGoalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGoalManager.swift; sourceTree = "<group>"; };
+		C8F9439321F0A4AF0051A2EB /* LocalGoalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGoalsTests.swift; sourceTree = "<group>"; };
 		ECC7A634273DAD5ACB8762D3 /* Pods-iHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHealth/Pods-iHealth.release.xcconfig"; sourceTree = "<group>"; };
 		FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -312,6 +314,7 @@
 		C887EDAB21EF45C600D627D9 /* iHealthTests */ = {
 			isa = PBXGroup;
 			children = (
+				C8F9439221F0A4730051A2EB /* Local Goals */,
 				C887EE0321EF903D00D627D9 /* Network */,
 				C887EDC921EF495B00D627D9 /* Health Manager */,
 				C887EDAE21EF45C600D627D9 /* Info.plist */,
@@ -540,6 +543,14 @@
 				C8F9438E21F09F2B0051A2EB /* LocalGoal.swift */,
 			);
 			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		C8F9439221F0A4730051A2EB /* Local Goals */ = {
+			isa = PBXGroup;
+			children = (
+				C8F9439321F0A4AF0051A2EB /* LocalGoalsTests.swift */,
+			);
+			path = "Local Goals";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -806,6 +817,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F9439421F0A4AF0051A2EB /* LocalGoalsTests.swift in Sources */,
 				C887EE0721EF906200D627D9 /* NetworkTests.swift in Sources */,
 				C887EDCB21EF497600D627D9 /* HealthManagerTests.swift in Sources */,
 			);

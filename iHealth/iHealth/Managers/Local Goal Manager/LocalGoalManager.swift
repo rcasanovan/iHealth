@@ -33,7 +33,7 @@ class LocalGoalManager: NSObject {
         }
     }
     
-    public func getGoals() -> [LocalGoal] {
+    public func getAll() -> [LocalGoal] {
         let realm = try! Realm()
         
         // Query Realm for all suggestions
@@ -43,7 +43,7 @@ class LocalGoalManager: NSObject {
         return Array(goals)
     }
     
-    public static func deleteAllGoals() {
+    public func deleteAll() {
         let realm = try! Realm()
         let goals = realm.objects(LocalGoal.self)
         
