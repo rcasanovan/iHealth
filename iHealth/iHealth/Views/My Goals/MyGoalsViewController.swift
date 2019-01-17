@@ -38,7 +38,7 @@ extension MyGoalsViewController {
      * SetupViews
      */
     private func setupViews() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.colorWithHex(hex: "#313336")
         edgesForExtendedLayout = []
         
         configureSubviews()
@@ -55,7 +55,7 @@ extension MyGoalsViewController {
         myGoalsTableView?.separatorStyle = .none
         myGoalsTableView?.rowHeight = UITableView.automaticDimension
         myGoalsTableView?.invalidateIntrinsicContentSize()
-        myGoalsTableView?.backgroundColor = .white
+        myGoalsTableView?.backgroundColor = .clear
         myGoalsTableView?.showsVerticalScrollIndicator = false
         
         registerCells()

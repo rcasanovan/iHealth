@@ -15,4 +15,7 @@
 //__ Reachability
 #import "Reachability.h"
 
+//__ XYPieChart
+#import <XYPieChart/XYPieChart.h>
+
 #endif /* iHealth_Bridging_Header_h */

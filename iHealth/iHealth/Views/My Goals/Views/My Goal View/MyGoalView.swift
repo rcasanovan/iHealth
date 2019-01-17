@@ -11,7 +11,7 @@ import UIKit
 class MyGoalView: UIView {
     
     private let goalBackgroundView: GradientView = GradientView()
-    private let goalImageView: UIImageView = UIImageView()
+    private let pieChartView: PieChartView = PieChartView()
     private let titleLabel: UILabel = UILabel()
     private let valueTitleLabel: UILabel = UILabel()
     private let valueSubtitleLabel: UILabel = UILabel()
@@ -31,13 +31,13 @@ class MyGoalView: UIView {
     }
     
     public func bindWithViewModel(_ viewModel: MyGoalViewModel) {
+        pieChartView.bindWithViewModel(viewModel)
         titleLabel.text = viewModel.title
         valueTitleLabel.text = viewModel.goal
         valueSubtitleLabel.text = viewModel.goalType
     }
     
     public func clear() {
-        goalImageView.image = nil
         titleLabel.text = ""
         valueTitleLabel.text = ""
         valueSubtitleLabel.text = ""
@@ -68,9 +68,7 @@ extension MyGoalView {
      */
     private func configureSubviews() {
         goalBackgroundView.backgroundColor = .black
-        
-        goalImageView.backgroundColor = .yellow
-        
+                
         titleLabel.font = UIFont.boldWithSize(size: 15.0)
         titleLabel.textColor = .white
         titleLabel.textAlignment = .right
@@ -136,7 +134,7 @@ extension MyGoalView {
      */
     private func addSubviews() {
         addSubview(goalBackgroundView)
-        addSubview(goalImageView)
+        addSubview(pieChartView)
         addSubview(titleLabel)
         addSubview(valueTitleLabel)
         addSubview(valueSubtitleLabel)
@@ -144,10 +142,10 @@ extension MyGoalView {
         addConstraintsWithFormat("H:|[v0]|", views: goalBackgroundView)
         addConstraintsWithFormat("V:|[v0(\(Layout.height))]|", views: goalBackgroundView)
         
-        addConstraintsWithFormat("H:|-\(Layout.GoalImageView.leading)-[v0(\(Layout.GoalImageView.width))]", views: goalImageView)
-        addConstraintsWithFormat("V:|-\(Layout.GoalImageView.top)-[v0(\(Layout.GoalImageView.height))]", views: goalImageView)
+        addConstraintsWithFormat("H:|-\(Layout.GoalImageView.leading)-[v0(\(Layout.GoalImageView.width))]", views: pieChartView)
+        addConstraintsWithFormat("V:|-\(Layout.GoalImageView.top)-[v0(\(Layout.GoalImageView.height))]", views: pieChartView)
         
-        addConstraintsWithFormat("H:[v0]-\(Layout.TitleLabel.leading)-[v1]-\(Layout.TitleLabel.trailing)-|", views: goalImageView, titleLabel)
+        addConstraintsWithFormat("H:[v0]-\(Layout.TitleLabel.leading)-[v1]-\(Layout.TitleLabel.trailing)-|", views: pieChartView, titleLabel)
         addConstraintsWithFormat("V:|-\(Layout.TitleLabel.top)-[v0(\(Layout.TitleLabel.height))]", views: titleLabel)
         
         addConstraintsWithFormat("H:[v0(\(Layout.ValueTitleLabel.width))]-\(Layout.ValueTitleLabel.trailing)-[v1]", views: valueTitleLabel, valueSubtitleLabel)

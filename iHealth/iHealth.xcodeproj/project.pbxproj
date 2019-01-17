@@ -72,6 +72,7 @@
 		C8F943A621F0D23D0051A2EB /* MyGoalDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943A521F0D23D0051A2EB /* MyGoalDatasource.swift */; };
 		C8F943A921F0D29B0051A2EB /* MyGoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943A821F0D29B0051A2EB /* MyGoalTableViewCell.swift */; };
 		C8F943AD21F0DB740051A2EB /* MyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943AC21F0DB740051A2EB /* MyGoalView.swift */; };
+		C8F943B221F0EC430051A2EB /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943B121F0EC430051A2EB /* PieChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,7 @@
 		C8F943A521F0D23D0051A2EB /* MyGoalDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalDatasource.swift; sourceTree = "<group>"; };
 		C8F943A821F0D29B0051A2EB /* MyGoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalTableViewCell.swift; sourceTree = "<group>"; };
 		C8F943AC21F0DB740051A2EB /* MyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalView.swift; sourceTree = "<group>"; };
+		C8F943B121F0EC430051A2EB /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		ECC7A634273DAD5ACB8762D3 /* Pods-iHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHealth/Pods-iHealth.release.xcconfig"; sourceTree = "<group>"; };
 		FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -623,6 +625,7 @@
 		C8F943AA21F0DB450051A2EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C8F943B021F0EC320051A2EB /* Pie Chart View */,
 				C8F943AB21F0DB640051A2EB /* My Goal View */,
 			);
 			path = Views;
@@ -634,6 +637,14 @@
 				C8F943AC21F0DB740051A2EB /* MyGoalView.swift */,
 			);
 			path = "My Goal View";
+			sourceTree = "<group>";
+		};
+		C8F943B021F0EC320051A2EB /* Pie Chart View */ = {
+			isa = PBXGroup;
+			children = (
+				C8F943B121F0EC430051A2EB /* PieChartView.swift */,
+			);
+			path = "Pie Chart View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -761,19 +772,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iHealth/Pods-iHealth-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/XYPieChart/XYPieChart.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XYPieChart.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -833,19 +844,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iHealthTests/Pods-iHealthTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/XYPieChart/XYPieChart.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XYPieChart.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -883,6 +894,7 @@
 				C887EDF021EF8D8C00D627D9 /* RequestProtocol.swift in Sources */,
 				C887EE1221EF974000D627D9 /* GoalViewModel.swift in Sources */,
 				C858A06221EFB3C8000321DC /* GoalsDatasource.swift in Sources */,
+				C8F943B221F0EC430051A2EB /* PieChartView.swift in Sources */,
 				C887EDEF21EF8D8C00D627D9 /* Result.swift in Sources */,
 				C858A05921EFA7D4000321DC /* MainTabBar.swift in Sources */,
 				C887EDF121EF8D8C00D627D9 /* RequestErrors.swift in Sources */,

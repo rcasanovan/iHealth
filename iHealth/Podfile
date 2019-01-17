@@ -13,8 +13,8 @@ def iHealthPods
     #Realm
     pod 'RealmSwift', '~> 3.7.6'
     
-    #Realm
-    pod 'Charts', '~> 3.1.1'
+    #pod 'Charts', '~> 3.1.1'
+    pod 'XYPieChart', '~> 0.2'
 end
 
 target 'iHealth' do
