@@ -17,6 +17,10 @@ class GoalView: UIView {
     private let valueTitleLabel: UILabel = UILabel()
     private let valueSubtitleLabel: UILabel = UILabel()
     
+    public var height: CGFloat {
+        return Layout.height
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -33,7 +37,6 @@ class GoalView: UIView {
         subtitleLabel.numberOfLines = 0
         valueTitleLabel.text = viewModel.goal
         valueSubtitleLabel.text = viewModel.goalType
-        layoutSubviews()
     }
     
     public func clear() {
@@ -97,12 +100,7 @@ extension GoalView {
      */
     private struct Layout {
         
-        struct GoalBackgroundView {
-            static let leading: CGFloat = 16.0
-            static let trailing: CGFloat = 16.0
-            static let top: CGFloat = 16.0
-            static let height: CGFloat = 100.0
-        }
+        static let height: CGFloat = 100.0
         
         struct GoalImageView {
             static let leading: CGFloat = 10.0
@@ -150,21 +148,21 @@ extension GoalView {
         addSubview(valueTitleLabel)
         addSubview(valueSubtitleLabel)
         
-        addConstraintsWithFormat("H:|-\(Layout.GoalBackgroundView.leading)-[v0]-\(Layout.GoalBackgroundView.trailing)-|", views: goalBackgroundView)
-        addConstraintsWithFormat("V:|-\(Layout.GoalBackgroundView.top)-[v0(\(Layout.GoalBackgroundView.height))]|", views: goalBackgroundView)
+        addConstraintsWithFormat("H:|[v0]|", views: goalBackgroundView)
+        addConstraintsWithFormat("V:|[v0(\(Layout.height))]|", views: goalBackgroundView)
         
         addConstraintsWithFormat("H:|-\(Layout.GoalImageView.leading)-[v0(\(Layout.GoalImageView.width))]", views: goalImageView)
-        addConstraintsWithFormat("V:|-\(Layout.GoalImageView.top)-[v0(\(Layout.GoalImageView.height))]|", views: goalImageView)
+        addConstraintsWithFormat("V:|-\(Layout.GoalImageView.top)-[v0(\(Layout.GoalImageView.height))]", views: goalImageView)
         
         addConstraintsWithFormat("H:[v0]-\(Layout.TitleLabel.leading)-[v1]-\(Layout.TitleLabel.trailing)-[v2]", views: goalImageView, titleLabel, valueTitleLabel)
         addConstraintsWithFormat("V:|-\(Layout.TitleLabel.top)-[v0(\(Layout.TitleLabel.height))]", views: titleLabel)
-        
+
         addConstraintsWithFormat("H:[v0]-\(Layout.SubtitleLabel.leading)-[v1]-\(Layout.SubtitleLabel.trailing)-[v2]", views: goalImageView, subtitleLabel, valueTitleLabel)
         addConstraintsWithFormat("V:[v0]-\(Layout.SubtitleLabel.top)-[v1(>=0.0)]-\(Layout.SubtitleLabel.bottom)-|", views: titleLabel, subtitleLabel)
-        
+
         addConstraintsWithFormat("H:[v0(\(Layout.ValueTitleLabel.width))]-\(Layout.ValueTitleLabel.trailing)-[v1]", views: valueTitleLabel, valueSubtitleLabel)
         addConstraintsWithFormat("V:[v0(>=0.0)]-\(Layout.ValueTitleLabel.bottom)-|", views: valueTitleLabel)
-        
+
         addConstraintsWithFormat("H:[v0(\(Layout.ValueSubtitleLabel.width))]-\(Layout.ValueSubtitleLabel.trailing)-|", views: valueSubtitleLabel)
         addConstraintsWithFormat("V:[v0(>=0.0)]-\(Layout.ValueSubtitleLabel.bottom)-|", views: valueSubtitleLabel)
     }
