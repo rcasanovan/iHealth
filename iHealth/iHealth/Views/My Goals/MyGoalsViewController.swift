@@ -14,7 +14,55 @@ class MyGoalsViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
         presenter?.viewDidLoad()
+    }
+    
+}
+
+// MARK: - Setup views
+extension MyGoalsViewController {
+    
+    /**
+     * SetupViews
+     */
+    private func setupViews() {
+        view.backgroundColor = .white
+        edgesForExtendedLayout = []
+        
+        configureSubviews()
+        addSubviews()
+    }
+    
+    /**
+     * ConfigureSubviews
+     */
+    private func configureSubviews() {
+        registerCells()
+        setupDatasource()
+    }
+    
+    /**
+     * Register all the cells we need
+     */
+    private func registerCells() {
+    }
+    
+    /**
+     * Setup datasource for my goals table view
+     */
+    private func setupDatasource() {
+    }
+    
+}
+
+// MARK: - Layout & constraints
+extension MyGoalsViewController {
+    
+    /**
+     * Add subviews
+     */
+    private func addSubviews() {
     }
     
 }

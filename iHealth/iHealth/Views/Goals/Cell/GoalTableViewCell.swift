@@ -85,7 +85,7 @@ extension GoalTableViewCell {
         
         valueSubtitleLabel.font = UIFont.mediumWithSize(size: 14.0)
         valueSubtitleLabel.textColor = .white
-        valueSubtitleLabel.textAlignment = .right
+        valueSubtitleLabel.textAlignment = .right   
     }
     
 }
