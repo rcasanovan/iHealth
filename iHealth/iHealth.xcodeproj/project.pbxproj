@@ -59,6 +59,7 @@
 		C887EE1621EF99AB00D627D9 /* GoalsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1521EF99AB00D627D9 /* GoalsPresenter.swift */; };
 		C887EE1821EF99B600D627D9 /* GoalsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1721EF99B600D627D9 /* GoalsInteractor.swift */; };
 		C887EE1A21EF99C100D627D9 /* GoalsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1921EF99C100D627D9 /* GoalsRouter.swift */; };
+		C8C0C4C221F148100058EF7A /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C0C4C121F148100058EF7A /* ShareView.swift */; };
 		C8F9438B21F09B5B0051A2EB /* CustomTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */; };
 		C8F9438F21F09F2B0051A2EB /* LocalGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9438E21F09F2B0051A2EB /* LocalGoal.swift */; };
 		C8F9439121F0A0AC0051A2EB /* LocalGoalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9439021F0A0AC0051A2EB /* LocalGoalManager.swift */; };
@@ -149,6 +150,7 @@
 		C887EE1521EF99AB00D627D9 /* GoalsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsPresenter.swift; sourceTree = "<group>"; };
 		C887EE1721EF99B600D627D9 /* GoalsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsInteractor.swift; sourceTree = "<group>"; };
 		C887EE1921EF99C100D627D9 /* GoalsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRouter.swift; sourceTree = "<group>"; };
+		C8C0C4C121F148100058EF7A /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleView.swift; sourceTree = "<group>"; };
 		C8F9438E21F09F2B0051A2EB /* LocalGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGoal.swift; sourceTree = "<group>"; };
 		C8F9439021F0A0AC0051A2EB /* LocalGoalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGoalManager.swift; sourceTree = "<group>"; };
@@ -538,9 +540,18 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		C8C0C4C021F147F50058EF7A /* Share View */ = {
+			isa = PBXGroup;
+			children = (
+				C8C0C4C121F148100058EF7A /* ShareView.swift */,
+			);
+			path = "Share View";
+			sourceTree = "<group>";
+		};
 		C8F9438821F09B410051A2EB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C8C0C4C021F147F50058EF7A /* Share View */,
 				C858A06C21EFBAAE000321DC /* Gradient View */,
 				C8F9438921F09B4A0051A2EB /* Custom Title View */,
 			);
@@ -887,6 +898,7 @@
 				C8F9439A21F0A9C70051A2EB /* GeneralMessagePresenter.swift in Sources */,
 				C858A05D21EFB25F000321DC /* UIView.swift in Sources */,
 				C887EDED21EF8D8C00D627D9 /* HTTPCode.swift in Sources */,
+				C8C0C4C221F148100058EF7A /* ShareView.swift in Sources */,
 				C8F9438F21F09F2B0051A2EB /* LocalGoal.swift in Sources */,
 				C887EE1421EF99A100D627D9 /* GoalsViewController.swift in Sources */,
 				C858A05121EFA3E0000321DC /* MyGoalsPresenter.swift in Sources */,

@@ -23,6 +23,17 @@ class MyGoalsPresenter {
 
 extension MyGoalsPresenter {
     
+    private func getMyGoals() {
+        interactor.getMyGoals { [weak self] (myGoals) in
+            guard let `self` = self else { return }
+            self.view?.loadMyGoals(myGoals)
+        }
+    }
+    
+}
+
+extension MyGoalsPresenter {
+    
     private func requestHealtAuthorizationIfNeeded() {
         interactor.requestHealthAuthorizationIfNeeded { [weak self] (success, error) in
             guard let `self` = self else { return }
@@ -36,6 +47,8 @@ extension MyGoalsPresenter {
                 self.view?.showMessageWith(title: "Oops... 🧐", message: "Something wrong happened. Please try again", actionTitle: "Accept")
                 return
             }
+            
+            self.getMyGoals()
         }
     }
     
@@ -48,10 +61,7 @@ extension MyGoalsPresenter: MyGoalsPresenterDelegate {
     }
     
     func viewDidAppear() {
-        interactor.getMyGoals { [weak self] (myGoals) in
-            guard let `self` = self else { return }
-            self.view?.loadMyGoals(myGoals)
-        }
+        getMyGoals()
     }
     
 }

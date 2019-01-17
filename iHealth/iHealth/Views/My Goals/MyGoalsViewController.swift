@@ -13,6 +13,7 @@ class MyGoalsViewController: BaseViewController {
     public var presenter: MyGoalsPresenterDelegate?
     
     private let customTitleView: CustomTitleView = CustomTitleView()
+    private let shareView: ShareView = ShareView()
     private let myGoalsContainerView: UIView = UIView()
     private var myGoalsTableView: UITableView?
     private var datasource: MyGoalsDatasource?
@@ -49,6 +50,9 @@ extension MyGoalsViewController {
      * ConfigureSubviews
      */
     private func configureSubviews() {
+        shareView.delegate = self
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: shareView)
+        
         myGoalsContainerView.backgroundColor = .clear
         myGoalsTableView = UITableView(frame: myGoalsContainerView.bounds, style: .plain)
         myGoalsTableView?.tableFooterView = UIView()
@@ -106,6 +110,15 @@ extension MyGoalsViewController {
             myGoalsContainerView.addConstraintsWithFormat("H:|[v0]|", views: myGoalsTableView)
             myGoalsContainerView.addConstraintsWithFormat("V:|[v0]|", views: myGoalsTableView)
         }
+    }
+    
+}
+
+// MARK: - ShareViewDelegate
+extension MyGoalsViewController: ShareViewDelegate {
+    
+    func shareViewPressed() {
+        print("test")
     }
     
 }

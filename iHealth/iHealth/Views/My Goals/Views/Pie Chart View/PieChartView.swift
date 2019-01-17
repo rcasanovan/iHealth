@@ -56,7 +56,7 @@ extension PieChartView {
      */
     private func configureSubviews() {
         pieChart.dataSource = self
-        pieChart.animationSpeed = 1.0
+        pieChart.animationSpeed = 1.5
         pieChart.showPercentage = false
         pieChart.showLabel = false
         pieChart.pieCenter = CGPoint(x: 40.0, y: 40.0)
