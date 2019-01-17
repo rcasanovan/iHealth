@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         configureReachability()
         configureNavigationBar()
+        configureTabBar()
         showInitialView()
         return true
     }
@@ -56,6 +57,10 @@ extension AppDelegate  {
         UINavigationBar.appearance().barTintColor = .black
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().barStyle = .blackOpaque
+    }
+    
+    private func configureTabBar() {
+        UITabBar.appearance().barTintColor = .black
     }
     
 }

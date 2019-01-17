@@ -37,6 +37,7 @@ class GoalView: UIView {
         subtitleLabel.numberOfLines = 0
         valueTitleLabel.text = viewModel.goal
         valueSubtitleLabel.text = viewModel.goalType
+        goalImageView.image = UIImage(named: viewModel.imageUrl)
     }
     
     public func clear() {
@@ -73,7 +74,7 @@ extension GoalView {
     private func configureSubviews() {
         goalBackgroundView.colors = [UIColor.colorWithHex(hex: "#ff6855").cgColor, UIColor.colorWithHex(hex: "#fe5c46").cgColor, UIColor.colorWithHex(hex: "#ff5350").cgColor, UIColor.colorWithHex(hex: "#fe4e36").cgColor]
         
-        goalImageView.backgroundColor = .yellow
+        goalImageView.backgroundColor = .clear
         
         titleLabel.font = UIFont.boldWithSize(size: 15.0)
         titleLabel.textColor = .white

@@ -14,12 +14,18 @@ struct MyGoalViewModel {
     let points: Int
     let goal: String
     let goalType: String
+    let percentage: CGFloat
+    let percentageTitle: String
+    let percentageColor: UIColor
     
-    init(title: String, points: Int, goal: String, goalType: String) {
+    init(title: String, points: Int, goal: String, goalType: String, percentage: CGFloat, percentageTitle: String, percentageColor: UIColor) {
         self.title = title
         self.points = points
         self.goal = goal
         self.goalType = goalType
+        self.percentage = percentage
+        self.percentageTitle = percentageTitle
+        self.percentageColor = percentageColor
     }
     
     public static func getViewModelsWith(_ goals: [LocalGoal]) -> [MyGoalViewModel] {
@@ -29,7 +35,7 @@ struct MyGoalViewModel {
     private static func getViewModelWith(_ goal: LocalGoal) -> MyGoalViewModel {
         let goalValue = getGoalValue(goal.goal, type: GoalType(rawValue: goal.type))
         let goalType = getGoalType(GoalType(rawValue: goal.type))
-        return MyGoalViewModel(title: goal.title, points: goal.points, goal: goalValue, goalType: goalType)
+        return MyGoalViewModel(title: goal.title, points: goal.points, goal: goalValue, goalType: goalType, percentage: 70.0, percentageTitle: "70%", percentageColor: .red)
     }
     
 }

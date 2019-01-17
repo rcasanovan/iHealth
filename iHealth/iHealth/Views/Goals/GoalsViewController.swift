@@ -34,7 +34,7 @@ extension GoalsViewController {
      * SetupViews
      */
     private func setupViews() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.colorWithHex(hex: "#313336")
         edgesForExtendedLayout = []
         
         configureSubviews()
@@ -51,7 +51,7 @@ extension GoalsViewController {
         goalsTableView?.separatorStyle = .none
         goalsTableView?.rowHeight = UITableView.automaticDimension
         goalsTableView?.invalidateIntrinsicContentSize()
-        goalsTableView?.backgroundColor = .white
+        goalsTableView?.backgroundColor = .clear
         goalsTableView?.showsVerticalScrollIndicator = false
         
 //        refreshControl.addTarget(self, action: #selector(userDidPullToRefresh), for: .valueChanged)

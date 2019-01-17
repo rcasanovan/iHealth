@@ -28,14 +28,22 @@ extension MainTabBar {
     private func configureTabBar() {
         if tabBarConfigured { return }
         
-        let goalsTabBarItem = UITabBarItem(title: "Goals", image: nil, tag: 0)
-        let myGoalsTabBarItem = UITabBarItem(title: "My Goals", image: nil, tag: 1)
+        let goalsIcon = UIImage(named: "goalsIcon")?.withRenderingMode(.alwaysOriginal)
+        let myGoalsIcon = UIImage(named: "myGoalsIcon")?.withRenderingMode(.alwaysOriginal)
+        
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.mediumWithSize(size: 10.0) ?? UIFont.systemFont(ofSize: 10.0)], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.mediumWithSize(size: 10.0) ?? UIFont.systemFont(ofSize: 10.0)], for: .selected)
+        
+        let goalsTabBarItem = UITabBarItem(title: "Goals", image: goalsIcon, tag: 0)
+        let myGoalsTabBarItem = UITabBarItem(title: "My Goals", image: myGoalsIcon, tag: 1)
         
         let goalsNagivationViewController = UINavigationController(rootViewController: goalsViewController)
         goalsNagivationViewController.tabBarItem = goalsTabBarItem
+        goalsNagivationViewController.tabBarItem.selectedImage = goalsIcon
         
         let myGoalsNagivationViewController = UINavigationController(rootViewController: myGoalsViewController)
         myGoalsNagivationViewController.tabBarItem = myGoalsTabBarItem
+        myGoalsNagivationViewController.tabBarItem.selectedImage = myGoalsIcon
         
         viewControllers = [goalsNagivationViewController, myGoalsNagivationViewController]
         

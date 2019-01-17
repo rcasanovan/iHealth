@@ -13,6 +13,9 @@ class PieChartView: UIView {
     private let pieChart: XYPieChart = XYPieChart()
     private let percentageLabel: UILabel = UILabel()
     
+    private var percentage: CGFloat?
+    private var percentageColor: UIColor?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -24,7 +27,9 @@ class PieChartView: UIView {
     }
     
     public func bindWithViewModel(_ viewModel: MyGoalViewModel) {
-        percentageLabel.text = "70%"
+        percentage = viewModel.percentage
+        percentageColor = viewModel.percentageColor
+        percentageLabel.text = viewModel.percentageTitle
         pieChart.reloadData()
     }
     
@@ -105,18 +110,21 @@ extension PieChartView: XYPieChartDataSource {
     func pieChart(_ pieChart: XYPieChart!, colorForSliceAt index: UInt) -> UIColor! {
         switch index {
         case 0:
-            return .red
+            return percentageColor ?? .clear
         default:
             return .white
         }
     }
     
     func pieChart(_ pieChart: XYPieChart!, valueForSliceAt index: UInt) -> CGFloat {
+        guard let percentage = percentage else {
+            return 0.0
+        }
         switch index {
         case 0:
-            return 70.0
+            return percentage
         default:
-            return 30.0
+            return 100.0 - percentage
         }
     }
     

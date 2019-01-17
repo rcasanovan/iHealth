@@ -33,7 +33,8 @@ struct GoalViewModel {
     private static func getViewModelWith(_ goalResponse: GoalResponse) -> GoalViewModel {
         let goalValue = getGoalValue(goalResponse.goal, type: GoalType(rawValue: goalResponse.type))
         let goalType = getGoalType(GoalType(rawValue: goalResponse.type))
-        return GoalViewModel(title: goalResponse.title, description: goalResponse.description, imageUrl: "", points: goalResponse.reward.points, goal: goalValue, goalType: goalType)
+        let imageUrl = getImageUrl(GoalType(rawValue: goalResponse.type), trophy: goalResponse.reward.trophy)
+        return GoalViewModel(title: goalResponse.title, description: goalResponse.description, imageUrl: imageUrl, points: goalResponse.reward.points, goal: goalValue, goalType: goalType)
     }
     
 }
@@ -63,6 +64,21 @@ extension GoalViewModel {
             return "steps"
         case .walking, .running:
             return "km"
+        }
+    }
+    
+    private static func getImageUrl(_ type: GoalType?, trophy: String) -> String {
+        guard let type = type else {
+            return ""
+        }
+        
+        switch type {
+        case .step:
+            return "\(trophy)_s"
+        case .walking:
+            return "\(trophy)_w"
+        case .running:
+            return "\(trophy)_r"
         }
     }
     

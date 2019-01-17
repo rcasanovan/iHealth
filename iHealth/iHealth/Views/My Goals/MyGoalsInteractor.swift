@@ -31,4 +31,12 @@ extension MyGoalsInteractor: MyGoalsInteractorDelegate {
         return MyGoalViewModel.getViewModelsWith(myGoals)
     }
     
+    func getUserSteps() -> Int {
+        return 200
+    }
+    
+    func getUserDistance() -> Double {
+        return 0.50
+    }
+    
 }
