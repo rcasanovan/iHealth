@@ -47,4 +47,8 @@ extension MyGoalsPresenter: MyGoalsPresenterDelegate {
         requestHealtAuthorizationIfNeeded()
     }
     
+    func viewDidAppear() {
+        print("test")
+    }
+    
 }
