@@ -47,7 +47,7 @@ extension GoalsInteractor: GoalsInteractorDelegate {
                     return
                 }
 
-                let goalsViewModel = GoalViewModel.getViewModelsWith(goalsResponse: response.items)
+                let goalsViewModel = GoalViewModel.getViewModelsWith(response.items)
                 self.goalsViewModel.append(contentsOf: goalsViewModel)
                 completion(self.goalsViewModel, true, nil)
             case .failure(let error):

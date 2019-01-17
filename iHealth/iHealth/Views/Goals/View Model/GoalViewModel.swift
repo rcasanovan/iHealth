@@ -26,7 +26,7 @@ struct GoalViewModel {
         self.goalType = goalType
     }
     
-    public static func getViewModelsWith(goalsResponse: [GoalResponse]) -> [GoalViewModel] {
+    public static func getViewModelsWith(_ goalsResponse: [GoalResponse]) -> [GoalViewModel] {
         return goalsResponse.map { getViewModelWith($0) }
     }
     

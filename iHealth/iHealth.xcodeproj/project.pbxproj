@@ -69,6 +69,8 @@
 		C8F9439E21F0AA3B0051A2EB /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9439D21F0AA3B0051A2EB /* UIEdgeInsets.swift */; };
 		C8F943A121F0C6D30051A2EB /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943A021F0C6D30051A2EB /* GoalView.swift */; };
 		C8F943A421F0CFE30051A2EB /* MyGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943A321F0CFE30051A2EB /* MyGoalViewModel.swift */; };
+		C8F943A621F0D23D0051A2EB /* MyGoalDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943A521F0D23D0051A2EB /* MyGoalDatasource.swift */; };
+		C8F943A921F0D29B0051A2EB /* MyGoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943A821F0D29B0051A2EB /* MyGoalTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,8 @@
 		C8F9439D21F0AA3B0051A2EB /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
 		C8F943A021F0C6D30051A2EB /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		C8F943A321F0CFE30051A2EB /* MyGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalViewModel.swift; sourceTree = "<group>"; };
+		C8F943A521F0D23D0051A2EB /* MyGoalDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalDatasource.swift; sourceTree = "<group>"; };
+		C8F943A821F0D29B0051A2EB /* MyGoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalTableViewCell.swift; sourceTree = "<group>"; };
 		ECC7A634273DAD5ACB8762D3 /* Pods-iHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHealth/Pods-iHealth.release.xcconfig"; sourceTree = "<group>"; };
 		FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -194,9 +198,11 @@
 		C858A04B21EFA3A2000321DC /* My Goals */ = {
 			isa = PBXGroup;
 			children = (
+				C8F943A721F0D2750051A2EB /* Cell */,
 				C8F943A221F0CFA60051A2EB /* View Model */,
 				C858A04C21EFA3C4000321DC /* MyGoalsProtocols.swift */,
 				C858A04E21EFA3D3000321DC /* MyGoalsViewController.swift */,
+				C8F943A521F0D23D0051A2EB /* MyGoalDatasource.swift */,
 				C858A05021EFA3E0000321DC /* MyGoalsPresenter.swift */,
 				C858A05321EFA55F000321DC /* MyGoalsInteractor.swift */,
 				C858A05521EFA56B000321DC /* MyGoalsRouter.swift */,
@@ -603,6 +609,14 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
+		C8F943A721F0D2750051A2EB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C8F943A821F0D29B0051A2EB /* MyGoalTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -849,6 +863,7 @@
 				C858A05921EFA7D4000321DC /* MainTabBar.swift in Sources */,
 				C887EDF121EF8D8C00D627D9 /* RequestErrors.swift in Sources */,
 				C887EDD421EF583A00D627D9 /* GoalsProtocols.swift in Sources */,
+				C8F943A621F0D23D0051A2EB /* MyGoalDatasource.swift in Sources */,
 				C858A06E21EFBABE000321DC /* GradientView.swift in Sources */,
 				C8F9438B21F09B5B0051A2EB /* CustomTitleView.swift in Sources */,
 				C858A07121EFBB1D000321DC /* UIColor.swift in Sources */,
@@ -857,6 +872,7 @@
 				C858A04F21EFA3D3000321DC /* MyGoalsViewController.swift in Sources */,
 				C8F943A421F0CFE30051A2EB /* MyGoalViewModel.swift in Sources */,
 				C8F9439921F0A9C70051A2EB /* GeneralMessageProtocols.swift in Sources */,
+				C8F943A921F0D29B0051A2EB /* MyGoalTableViewCell.swift in Sources */,
 				C858A05421EFA55F000321DC /* MyGoalsInteractor.swift in Sources */,
 				C887EE1621EF99AB00D627D9 /* GoalsPresenter.swift in Sources */,
 				C8F9439121F0A0AC0051A2EB /* LocalGoalManager.swift in Sources */,
