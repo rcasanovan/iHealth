@@ -21,9 +21,30 @@ class MyGoalsPresenter {
     
 }
 
+extension MyGoalsPresenter {
+    
+    private func requestHealtAuthorizationIfNeeded() {
+        interactor.requestHealthAuthorizationIfNeeded { [weak self] (success, error) in
+            guard let `self` = self else { return }
+            
+            if let error = error {
+                self.view?.showMessageWith(title: "Oops... 🧐", message: error.localizedDescription, actionTitle: "Accept")
+                return
+            }
+            
+            if !success {
+                self.view?.showMessageWith(title: "Oops... 🧐", message: "Something wrong happened. Please try again", actionTitle: "Accept")
+                return
+            }
+        }
+    }
+    
+}
+
 extension MyGoalsPresenter: MyGoalsPresenterDelegate {
     
     func viewDidLoad() {
+        requestHealtAuthorizationIfNeeded()
     }
     
 }

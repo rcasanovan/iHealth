@@ -17,4 +17,10 @@ class MyGoalsInteractor {
 
 extension MyGoalsInteractor: MyGoalsInteractorDelegate {
     
+    func requestHealthAuthorizationIfNeeded(completion: @escaping HealthAuthCompletionBlock) {
+        HealthManager.shared.requestAuthorization { (success, error) in
+            completion(success, error)
+        }
+    }
+    
 }

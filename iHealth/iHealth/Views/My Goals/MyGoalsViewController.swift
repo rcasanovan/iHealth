@@ -69,4 +69,8 @@ extension MyGoalsViewController {
 
 extension MyGoalsViewController: MyGoalsViewInjection {
     
+    func showMessageWith(title: String, message: String, actionTitle: String) {
+        showAlertWith(title: title, message: message, actionTitle: actionTitle)
+    }
+    
 }
