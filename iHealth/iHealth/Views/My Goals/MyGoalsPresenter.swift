@@ -48,7 +48,8 @@ extension MyGoalsPresenter: MyGoalsPresenterDelegate {
     }
     
     func viewDidAppear() {
-        print("test")
+        let myGoals = interactor.getMyGoals()
+        view?.loadMyGoals(myGoals)
     }
     
 }

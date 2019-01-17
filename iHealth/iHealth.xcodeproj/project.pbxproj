@@ -71,6 +71,7 @@
 		C8F943A421F0CFE30051A2EB /* MyGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943A321F0CFE30051A2EB /* MyGoalViewModel.swift */; };
 		C8F943A621F0D23D0051A2EB /* MyGoalDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943A521F0D23D0051A2EB /* MyGoalDatasource.swift */; };
 		C8F943A921F0D29B0051A2EB /* MyGoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943A821F0D29B0051A2EB /* MyGoalTableViewCell.swift */; };
+		C8F943AD21F0DB740051A2EB /* MyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F943AC21F0DB740051A2EB /* MyGoalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,7 @@
 		C8F943A321F0CFE30051A2EB /* MyGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalViewModel.swift; sourceTree = "<group>"; };
 		C8F943A521F0D23D0051A2EB /* MyGoalDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalDatasource.swift; sourceTree = "<group>"; };
 		C8F943A821F0D29B0051A2EB /* MyGoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalTableViewCell.swift; sourceTree = "<group>"; };
+		C8F943AC21F0DB740051A2EB /* MyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalView.swift; sourceTree = "<group>"; };
 		ECC7A634273DAD5ACB8762D3 /* Pods-iHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHealth/Pods-iHealth.release.xcconfig"; sourceTree = "<group>"; };
 		FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -198,6 +200,7 @@
 		C858A04B21EFA3A2000321DC /* My Goals */ = {
 			isa = PBXGroup;
 			children = (
+				C8F943AA21F0DB450051A2EB /* Views */,
 				C8F943A721F0D2750051A2EB /* Cell */,
 				C8F943A221F0CFA60051A2EB /* View Model */,
 				C858A04C21EFA3C4000321DC /* MyGoalsProtocols.swift */,
@@ -249,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				C8F9439F21F0C6C70051A2EB /* Goal View */,
-				C858A06C21EFBAAE000321DC /* Gradient View */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -537,6 +539,7 @@
 		C8F9438821F09B410051A2EB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C858A06C21EFBAAE000321DC /* Gradient View */,
 				C8F9438921F09B4A0051A2EB /* Custom Title View */,
 			);
 			path = Common;
@@ -615,6 +618,22 @@
 				C8F943A821F0D29B0051A2EB /* MyGoalTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C8F943AA21F0DB450051A2EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8F943AB21F0DB640051A2EB /* My Goal View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8F943AB21F0DB640051A2EB /* My Goal View */ = {
+			isa = PBXGroup;
+			children = (
+				C8F943AC21F0DB740051A2EB /* MyGoalView.swift */,
+			);
+			path = "My Goal View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -841,6 +860,7 @@
 				C858A04D21EFA3C4000321DC /* MyGoalsProtocols.swift in Sources */,
 				C858A08521EFC158000321DC /* UIFont.swift in Sources */,
 				C887EDFD21EF8E0600D627D9 /* GoalResponse.swift in Sources */,
+				C8F943AD21F0DB740051A2EB /* MyGoalView.swift in Sources */,
 				C8F943A121F0C6D30051A2EB /* GoalView.swift in Sources */,
 				C887EE0D21EF90FF00D627D9 /* ReachabilityManager.swift in Sources */,
 				C858A04A21EF9C0F000321DC /* BaseViewController.swift in Sources */,

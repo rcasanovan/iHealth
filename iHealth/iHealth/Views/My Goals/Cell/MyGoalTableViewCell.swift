@@ -10,7 +10,7 @@ import UIKit
 
 class MyGoalTableViewCell: UITableViewCell {
     
-    private let goalView: GoalView = GoalView()
+    private let myGoalView: MyGoalView = MyGoalView()
     
     static public var identifier: String {
         return String(describing: self)
@@ -28,10 +28,11 @@ class MyGoalTableViewCell: UITableViewCell {
     
     public override func prepareForReuse() {
         super.prepareForReuse()
-        goalView.clear()
+        myGoalView.clear()
     }
     
     public func bindWithViewModel(_ viewModel: MyGoalViewModel) {
+        myGoalView.bindWithViewModel(viewModel)
     }
     
 }
@@ -59,7 +60,7 @@ extension MyGoalTableViewCell {
      */
     private struct Layout {
         
-        struct GoalView {
+        struct MyGoalView {
             static let leading: CGFloat = 16.0
             static let trailing: CGFloat = 16.0
             static let top: CGFloat = 16.0
@@ -71,10 +72,10 @@ extension MyGoalTableViewCell {
      * Add subviews
      */
     private func addSubviews() {
-        addSubview(goalView)
+        addSubview(myGoalView)
         
-        addConstraintsWithFormat("H:|-\(Layout.GoalView.leading)-[v0]-\(Layout.GoalView.trailing)-|", views: goalView)
-        addConstraintsWithFormat("V:|-\(Layout.GoalView.top)-[v0(\(goalView.height))]|", views: goalView)
+        addConstraintsWithFormat("H:|-\(Layout.MyGoalView.leading)-[v0]-\(Layout.MyGoalView.trailing)-|", views: myGoalView)
+        addConstraintsWithFormat("V:|-\(Layout.MyGoalView.top)-[v0(\(myGoalView.height))]|", views: myGoalView)
     }
     
 }

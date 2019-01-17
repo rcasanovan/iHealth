@@ -11,6 +11,7 @@ import Foundation
 // View / Presenter
 protocol MyGoalsViewInjection : class {
     func showMessageWith(title: String, message: String, actionTitle: String)
+    func loadMyGoals(_ viewModels: [MyGoalViewModel])
 }
 
 protocol MyGoalsPresenterDelegate : class {
