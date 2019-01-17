@@ -53,7 +53,7 @@ extension MyGoalViewModel {
         case .step:
             return "\(userSteps) / \(value)"
         case .walking, .running:
-            return "\(userDistance) / \(value/1000)"
+            return "\(String(format: "%.3f", userDistance)) / \(value/1000)"
         }
     }
     

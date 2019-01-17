@@ -84,7 +84,9 @@ extension HealthManager: HealthDelegate {
                 completion(0.0, false)
                 return
             }
-            completion(sum.doubleValue(for: self.getUnitForType(type)), true)
+            DispatchQueue.main.async { () -> Void in
+                completion(sum.doubleValue(for: self.getUnitForType(type)), true)
+            }
         }
         
         store.execute(query)

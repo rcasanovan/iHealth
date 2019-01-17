@@ -11,21 +11,42 @@ import Foundation
 class MyGoalsInteractor {
     
     private var myGoalsViewModel: [MyGoalViewModel]
+    private var userSteps: Int
+    private var userDistance: Double
+    private var completion: MyGoalsGetGoalsCompletionBlock?
     
     init() {
         myGoalsViewModel = []
+        userSteps = 0
+        userDistance = 0.0
     }
     
 }
 
 extension MyGoalsInteractor {
     
-    private func getUserSteps() -> Int {
-        return 200
+    private func getUserSteps() {
+        HealthManager.shared.getValueForType(.steps) { [weak self] (steps, success) in
+            guard let `self` = self else { return }
+            
+            self.userSteps = Int(steps)
+            self.getUserDistance()
+        }
     }
     
-    private func getUserDistance() -> Double {
-        return 0.50
+    private func getUserDistance() {
+        HealthManager.shared.getValueForType(.distance) { [weak self] (distance, success) in
+            guard let `self` = self else { return }
+            
+            self.userDistance = distance / 1000
+            self.getUserGoals()
+        }
+    }
+    
+    private func getUserGoals() {
+        let myGoals = LocalGoalManager.shared.getAll()
+        myGoalsViewModel = MyGoalViewModel.getViewModelsWith(myGoals, userSteps: userSteps, userDistance: userDistance)
+        completion?(myGoalsViewModel)
     }
     
 }
@@ -38,11 +59,9 @@ extension MyGoalsInteractor: MyGoalsInteractorDelegate {
         }
     }
     
-    func getMyGoals() -> [MyGoalViewModel] {
-        let myGoals = LocalGoalManager.shared.getAll()
-        let userSteps = getUserSteps()
-        let userDistance = getUserDistance()
-        return MyGoalViewModel.getViewModelsWith(myGoals, userSteps: userSteps, userDistance: userDistance)
+    func getMyGoals(completion: @escaping MyGoalsGetGoalsCompletionBlock) {
+        self.completion = completion
+        getUserSteps()
     }
     
 }

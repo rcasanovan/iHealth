@@ -48,8 +48,10 @@ extension MyGoalsPresenter: MyGoalsPresenterDelegate {
     }
     
     func viewDidAppear() {
-        let myGoals = interactor.getMyGoals()
-        view?.loadMyGoals(myGoals)
+        interactor.getMyGoals { [weak self] (myGoals) in
+            guard let `self` = self else { return }
+            self.view?.loadMyGoals(myGoals)
+        }
     }
     
 }
