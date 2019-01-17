@@ -61,5 +61,11 @@ class LocalGoalsTests: XCTestCase {
         let goalExists = LocalGoalManager.shared.goalExists("1000")
         XCTAssert(goalExists == true, "The goal doesn't exist in the data base")
     }
+    
+    func testEmptyGoals() {
+        LocalGoalManager.shared.deleteAll()
+        let isEmpty = LocalGoalManager.shared.isEmpty()
+        XCTAssert(isEmpty == true)
+    }
 
 }

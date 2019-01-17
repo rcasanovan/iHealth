@@ -34,7 +34,7 @@ extension GeneralMessagePresenter: GeneralMessagePresenterDelegate {
     func viewDidLoad() {
         switch type {
         case .NoInternetConnection:
-            view?.load(title: NSLocalizedString("Without connection to the network.", comment: ""), message: NSLocalizedString("iMarvel needs to connect to the internet.\nCheck the connections and try again.", comment: ""))
+            view?.load(title: NSLocalizedString("Without connection to the network.", comment: ""), message: NSLocalizedString("iHealth needs to connect to the internet.\nCheck the connections and try again.", comment: ""))
             break
         }
     }

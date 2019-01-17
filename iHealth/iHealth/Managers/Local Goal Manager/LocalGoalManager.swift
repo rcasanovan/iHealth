@@ -58,5 +58,10 @@ class LocalGoalManager: NSObject {
         return goals.count == 1
     }
     
+    public func isEmpty() -> Bool {
+        let goals = getAll()
+        return goals.isEmpty
+    }
+    
 }
 
