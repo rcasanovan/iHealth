@@ -118,8 +118,7 @@ extension MyGoalsViewController {
 extension MyGoalsViewController: ShareViewDelegate {
     
     func shareViewPressed() {
-        var items: [Any] = ["test"]
-        ShareManager.shared.share(items, from: self)
+        presenter?.sharePressed()
     }
     
 }

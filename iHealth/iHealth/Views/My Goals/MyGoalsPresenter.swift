@@ -64,4 +64,12 @@ extension MyGoalsPresenter: MyGoalsPresenterDelegate {
         getMyGoals()
     }
     
+    func sharePressed() {
+        guard let view = view as? UIViewController else {
+            return
+        }
+        var items: [Any] = ["test"]
+        ShareManager.shared.share(items, from: view)
+    }
+    
 }

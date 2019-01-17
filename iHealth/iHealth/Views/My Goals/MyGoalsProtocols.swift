@@ -17,6 +17,7 @@ protocol MyGoalsViewInjection : class {
 protocol MyGoalsPresenterDelegate : class {
     func viewDidLoad()
     func viewDidAppear()
+    func sharePressed()
 }
 
 // Presenter / Interactor
