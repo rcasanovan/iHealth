@@ -20,6 +20,7 @@ protocol MyGoalsPresenterDelegate : class {
 // Presenter / Interactor
 protocol MyGoalsInteractorDelegate : class {
     func requestHealthAuthorizationIfNeeded(completion: @escaping HealthAuthCompletionBlock)
+    func getMyGoals() -> [MyGoalViewModel]
 }
 
 // Presenter / Router

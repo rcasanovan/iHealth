@@ -10,7 +10,10 @@ import Foundation
 
 class MyGoalsInteractor {
     
+    private var myGoalsViewModel: [MyGoalViewModel]
+    
     init() {
+        myGoalsViewModel = []
     }
     
 }
@@ -21,6 +24,11 @@ extension MyGoalsInteractor: MyGoalsInteractorDelegate {
         HealthManager.shared.requestAuthorization { (success, error) in
             completion(success, error)
         }
+    }
+    
+    func getMyGoals() -> [MyGoalViewModel] {
+        let myGoals = LocalGoalManager.shared.getAll()
+        return MyGoalViewModel.getViewModelsWith(myGoals)
     }
     
 }
