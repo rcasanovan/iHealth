@@ -116,6 +116,7 @@ extension MyGoalView {
         }
         
         struct ValueTitleLabel {
+            static let leading: CGFloat = 10.0
             static let trailing: CGFloat = 5.0
             static let bottom: CGFloat = 10.0
             static let width: CGFloat = 80.0
@@ -148,7 +149,7 @@ extension MyGoalView {
         addConstraintsWithFormat("H:[v0]-\(Layout.TitleLabel.leading)-[v1]-\(Layout.TitleLabel.trailing)-|", views: pieChartView, titleLabel)
         addConstraintsWithFormat("V:|-\(Layout.TitleLabel.top)-[v0(\(Layout.TitleLabel.height))]", views: titleLabel)
         
-        addConstraintsWithFormat("H:[v0(\(Layout.ValueTitleLabel.width))]-\(Layout.ValueTitleLabel.trailing)-[v1]", views: valueTitleLabel, valueSubtitleLabel)
+        addConstraintsWithFormat("H:[v0]-\(Layout.ValueTitleLabel.leading)-[v1]-\(Layout.ValueTitleLabel.trailing)-[v2]", views: pieChartView, valueTitleLabel, valueSubtitleLabel)
         addConstraintsWithFormat("V:[v0(>=0.0)]-\(Layout.ValueTitleLabel.bottom)-|", views: valueTitleLabel)
         
         addConstraintsWithFormat("H:[v0(\(Layout.ValueSubtitleLabel.width))]-\(Layout.ValueSubtitleLabel.trailing)-|", views: valueSubtitleLabel)

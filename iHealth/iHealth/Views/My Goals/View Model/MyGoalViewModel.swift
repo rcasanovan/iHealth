@@ -28,30 +28,32 @@ struct MyGoalViewModel {
         self.percentageColor = percentageColor
     }
     
-    public static func getViewModelsWith(_ goals: [LocalGoal]) -> [MyGoalViewModel] {
-        return goals.map { getViewModelWith($0) }
+    public static func getViewModelsWith(_ goals: [LocalGoal], userSteps: Int, userDistance: Double) -> [MyGoalViewModel] {
+        return goals.map { getViewModelWith($0, userSteps: userSteps, userDistance: userDistance) }
     }
     
-    private static func getViewModelWith(_ goal: LocalGoal) -> MyGoalViewModel {
-        let goalValue = getGoalValue(goal.goal, type: GoalType(rawValue: goal.type))
+    private static func getViewModelWith(_ goal: LocalGoal, userSteps: Int, userDistance: Double) -> MyGoalViewModel {
+        let goalValue = getGoalValue(userSteps: userSteps, userDistance: userDistance, value: goal.goal, type: GoalType(rawValue: goal.type))
         let goalType = getGoalType(GoalType(rawValue: goal.type))
-        return MyGoalViewModel(title: goal.title, points: goal.points, goal: goalValue, goalType: goalType, percentage: 70.0, percentageTitle: "70%", percentageColor: .red)
+        let color = getColor(GoalType(rawValue: goal.type))
+        let percentage = getPercentage(userSteps: userSteps, userDistance: userDistance, value: goal.goal, type: GoalType(rawValue: goal.type))
+        return MyGoalViewModel(title: goal.title, points: goal.points, goal: goalValue, goalType: goalType, percentage: percentage, percentageTitle: "\(Int(percentage))%", percentageColor: color)
     }
     
 }
 
 extension MyGoalViewModel {
     
-    private static func getGoalValue(_ value: Int, type: GoalType?) -> String {
+    private static func getGoalValue(userSteps: Int, userDistance: Double, value: Int, type: GoalType?) -> String {
         guard let type = type else {
             return String(value)
         }
         
         switch type {
         case .step:
-            return String(value)
+            return "\(userSteps) / \(value)"
         case .walking, .running:
-            return String(value / 1000)
+            return "\(userDistance) / \(value/1000)"
         }
     }
     
@@ -65,6 +67,34 @@ extension MyGoalViewModel {
             return "steps"
         case .walking, .running:
             return "km"
+        }
+    }
+    
+    private static func getColor(_ type: GoalType?) -> UIColor {
+        guard let type = type else {
+            return .clear
+        }
+        
+        switch type {
+        case .step:
+            return UIColor.colorWithHex(hex: "#00c7dd")
+        case .walking:
+            return UIColor.colorWithHex(hex: "#59e707")
+        case .running:
+            return UIColor.colorWithHex(hex: "#e71135")
+        }
+    }
+    
+    private static func getPercentage(userSteps: Int, userDistance: Double, value: Int, type: GoalType?) -> CGFloat {
+        guard let type = type else {
+            return 0.0
+        }
+        
+        switch type {
+        case .step:
+            return CGFloat((userSteps * 100)/value)
+        case .walking, .running:
+            return CGFloat(((userDistance*1000) * 100)/Double(value))
         }
     }
     

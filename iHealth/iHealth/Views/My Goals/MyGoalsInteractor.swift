@@ -18,6 +18,18 @@ class MyGoalsInteractor {
     
 }
 
+extension MyGoalsInteractor {
+    
+    private func getUserSteps() -> Int {
+        return 200
+    }
+    
+    private func getUserDistance() -> Double {
+        return 0.50
+    }
+    
+}
+
 extension MyGoalsInteractor: MyGoalsInteractorDelegate {
     
     func requestHealthAuthorizationIfNeeded(completion: @escaping HealthAuthCompletionBlock) {
@@ -28,15 +40,9 @@ extension MyGoalsInteractor: MyGoalsInteractorDelegate {
     
     func getMyGoals() -> [MyGoalViewModel] {
         let myGoals = LocalGoalManager.shared.getAll()
-        return MyGoalViewModel.getViewModelsWith(myGoals)
-    }
-    
-    func getUserSteps() -> Int {
-        return 200
-    }
-    
-    func getUserDistance() -> Double {
-        return 0.50
+        let userSteps = getUserSteps()
+        let userDistance = getUserDistance()
+        return MyGoalViewModel.getViewModelsWith(myGoals, userSteps: userSteps, userDistance: userDistance)
     }
     
 }
