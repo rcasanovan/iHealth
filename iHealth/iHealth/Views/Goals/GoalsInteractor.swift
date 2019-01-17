@@ -32,6 +32,18 @@ extension GoalsInteractor {
         requestManager.send(request: goalsRequest)
     }
     
+    private func updateGoalsWith(_ goals: [GoalResponse]) {
+        let goalsViewModel = GoalViewModel.getViewModelsWith(goals)
+        self.goalsViewModel.append(contentsOf: goalsViewModel)
+        saveGoals(goals)
+    }
+    
+    private func saveGoals(_  goals: [GoalResponse]) {
+        for eachGoal in goals {
+            LocalGoalManager.shared.save(id: eachGoal.id, title: eachGoal.title, description: eachGoal.description, type: eachGoal.type, goal: eachGoal.goal, trophy: eachGoal.reward.trophy, points: eachGoal.reward.points)
+        }
+    }
+    
 }
 
 extension GoalsInteractor: GoalsInteractorDelegate {
@@ -47,8 +59,7 @@ extension GoalsInteractor: GoalsInteractorDelegate {
                     return
                 }
 
-                let goalsViewModel = GoalViewModel.getViewModelsWith(response.items)
-                self.goalsViewModel.append(contentsOf: goalsViewModel)
+                self.updateGoalsWith(response.items)
                 completion(self.goalsViewModel, true, nil)
             case .failure(let error):
                 completion(nil, false, error)
