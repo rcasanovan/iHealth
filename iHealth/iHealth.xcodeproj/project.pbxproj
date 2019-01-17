@@ -60,6 +60,7 @@
 		C887EE1821EF99B600D627D9 /* GoalsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1721EF99B600D627D9 /* GoalsInteractor.swift */; };
 		C887EE1A21EF99C100D627D9 /* GoalsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1921EF99C100D627D9 /* GoalsRouter.swift */; };
 		C8F9438B21F09B5B0051A2EB /* CustomTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */; };
+		C8F9438F21F09F2B0051A2EB /* LocalGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9438E21F09F2B0051A2EB /* LocalGoal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		C887EE1721EF99B600D627D9 /* GoalsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsInteractor.swift; sourceTree = "<group>"; };
 		C887EE1921EF99C100D627D9 /* GoalsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRouter.swift; sourceTree = "<group>"; };
 		C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleView.swift; sourceTree = "<group>"; };
+		C8F9438E21F09F2B0051A2EB /* LocalGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGoal.swift; sourceTree = "<group>"; };
 		ECC7A634273DAD5ACB8762D3 /* Pods-iHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHealth/Pods-iHealth.release.xcconfig"; sourceTree = "<group>"; };
 		FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -346,6 +348,7 @@
 		C887EDC521EF486800D627D9 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				C8F9438C21F09EF60051A2EB /* Local Goal Manager */,
 				C887EE0821EF90FF00D627D9 /* Reachability Manager */,
 				C887EDC621EF487700D627D9 /* Health Manager */,
 			);
@@ -518,6 +521,22 @@
 				C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */,
 			);
 			path = "Custom Title View";
+			sourceTree = "<group>";
+		};
+		C8F9438C21F09EF60051A2EB /* Local Goal Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C8F9438D21F09F130051A2EB /* Data Models */,
+			);
+			path = "Local Goal Manager";
+			sourceTree = "<group>";
+		};
+		C8F9438D21F09F130051A2EB /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8F9438E21F09F2B0051A2EB /* LocalGoal.swift */,
+			);
+			path = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -752,6 +771,7 @@
 				C858A05621EFA56B000321DC /* MyGoalsRouter.swift in Sources */,
 				C858A05D21EFB25F000321DC /* UIView.swift in Sources */,
 				C887EDED21EF8D8C00D627D9 /* HTTPCode.swift in Sources */,
+				C8F9438F21F09F2B0051A2EB /* LocalGoal.swift in Sources */,
 				C887EE1421EF99A100D627D9 /* GoalsViewController.swift in Sources */,
 				C858A05121EFA3E0000321DC /* MyGoalsPresenter.swift in Sources */,
 				C887EDEC21EF8D8C00D627D9 /* RequestManager.swift in Sources */,
