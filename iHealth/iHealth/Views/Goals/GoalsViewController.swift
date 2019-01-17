@@ -12,6 +12,7 @@ class GoalsViewController: BaseViewController {
     
     public var presenter: GoalsPresenterDelegate?
     
+    private let customTitleView: CustomTitleView = CustomTitleView()
     private let goalsContainerView: UIView = UIView()
     private var goalsTableView: UITableView?
     private var datasource: GoalsDatasource?
@@ -20,6 +21,7 @@ class GoalsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        configureNavigationBar()
         presenter?.viewDidLoad()
     }
     
@@ -58,6 +60,14 @@ extension GoalsViewController {
         
         registerCells()
         setupDatasource()
+    }
+    
+    private func configureNavigationBar() {
+        customTitleView.titleColor = .white
+        customTitleView.setTitle("General goals")
+        customTitleView.subtitleColor = .white
+        customTitleView.setSubtitle("Are you ready for the challenge?")
+        navigationItem.titleView = customTitleView
     }
     
     /**

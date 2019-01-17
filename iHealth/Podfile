@@ -9,6 +9,9 @@ inhibit_all_warnings!
 def iHealthPods
     #SVProgressHUD
     pod 'SVProgressHUD', '~> 2.2.5'
+    
+    #Realm
+    pod 'RealmSwift', '~> 3.7.6'
 end
 
 target 'iHealth' do
