@@ -61,6 +61,7 @@
 		C887EE1A21EF99C100D627D9 /* GoalsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887EE1921EF99C100D627D9 /* GoalsRouter.swift */; };
 		C8F9438B21F09B5B0051A2EB /* CustomTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */; };
 		C8F9438F21F09F2B0051A2EB /* LocalGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9438E21F09F2B0051A2EB /* LocalGoal.swift */; };
+		C8F9439121F0A0AC0051A2EB /* LocalGoalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F9439021F0A0AC0051A2EB /* LocalGoalManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		C887EE1921EF99C100D627D9 /* GoalsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRouter.swift; sourceTree = "<group>"; };
 		C8F9438A21F09B5B0051A2EB /* CustomTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleView.swift; sourceTree = "<group>"; };
 		C8F9438E21F09F2B0051A2EB /* LocalGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGoal.swift; sourceTree = "<group>"; };
+		C8F9439021F0A0AC0051A2EB /* LocalGoalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGoalManager.swift; sourceTree = "<group>"; };
 		ECC7A634273DAD5ACB8762D3 /* Pods-iHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHealth/Pods-iHealth.release.xcconfig"; sourceTree = "<group>"; };
 		FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -527,6 +529,7 @@
 			isa = PBXGroup;
 			children = (
 				C8F9438D21F09F130051A2EB /* Data Models */,
+				C8F9439021F0A0AC0051A2EB /* LocalGoalManager.swift */,
 			);
 			path = "Local Goal Manager";
 			sourceTree = "<group>";
@@ -790,6 +793,7 @@
 				C858A04F21EFA3D3000321DC /* MyGoalsViewController.swift in Sources */,
 				C858A05421EFA55F000321DC /* MyGoalsInteractor.swift in Sources */,
 				C887EE1621EF99AB00D627D9 /* GoalsPresenter.swift in Sources */,
+				C8F9439121F0A0AC0051A2EB /* LocalGoalManager.swift in Sources */,
 				C887EDD021EF556A00D627D9 /* Device.swift in Sources */,
 				C887EDF321EF8D8C00D627D9 /* EndPoint.swift in Sources */,
 				C887EE1821EF99B600D627D9 /* GoalsInteractor.swift in Sources */,
