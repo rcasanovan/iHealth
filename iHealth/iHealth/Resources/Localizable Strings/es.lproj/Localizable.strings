@@ -13,3 +13,5 @@
 "my_goals.subtitle" = "Verifica tu progreso diario";
 "steps.title" = "pasos";
 "share.default.title" = "🏃🏻‍♂️ ¡Ey!. ¡Verifica tu progreso diario con esta increíble app!. Puedes consultar el proyecto completo aquí: https://github.com/rcasanovan/iHealth";
+"no_connection.title" = "Sin conexión a la red.";
+"no_connection.subtitle" = "iHealth necesita conectarse a internet.\nVerifica la conexión e inténtalo de nuevo.";

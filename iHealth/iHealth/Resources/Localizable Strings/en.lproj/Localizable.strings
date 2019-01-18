@@ -13,3 +13,5 @@
 "my_goals.subtitle" = "Check your daily progress";
 "steps.title" = "steps";
 "share.default.title" = "🏃🏻‍♂️ Hey!. Check your dayly progress with this amazing app!. You can check the project here: https://github.com/rcasanovan/iHealth";
+"no_connection.title" = "Without connection to the network.";
+"no_connection.subtitle" = "iHealth needs to connect to the internet.\nCheck the connections and try again.";
