@@ -30,11 +30,22 @@ struct GoalViewModel {
         return goalsResponse.map { getViewModelWith($0) }
     }
     
+    public static func getLocalViewModelsWith(_ goals: [LocalGoal]) -> [GoalViewModel] {
+        return goals.map { getLocalViewModelWith($0) }
+    }
+    
     private static func getViewModelWith(_ goalResponse: GoalResponse) -> GoalViewModel {
         let goalValue = getGoalValue(goalResponse.goal, type: GoalType(rawValue: goalResponse.type))
         let goalType = getGoalType(GoalType(rawValue: goalResponse.type))
         let imageUrl = getImageUrl(GoalType(rawValue: goalResponse.type), trophy: goalResponse.reward.trophy)
         return GoalViewModel(title: goalResponse.title, description: goalResponse.description, imageUrl: imageUrl, points: goalResponse.reward.points, goal: goalValue, goalType: goalType)
+    }
+    
+    private static func getLocalViewModelWith(_ goal: LocalGoal) -> GoalViewModel {
+        let goalValue = getGoalValue(goal.goal, type: GoalType(rawValue: goal.type))
+        let goalType = getGoalType(GoalType(rawValue: goal.type))
+        let imageUrl = getImageUrl(GoalType(rawValue: goal.type), trophy: goal.trophy)
+        return GoalViewModel(title: goal.title, description: goal.goalDescription, imageUrl: imageUrl, points: goal.points, goal: goalValue, goalType: goalType)
     }
     
 }
