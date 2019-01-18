@@ -88,3 +88,29 @@ public struct RewardResponse: Decodable {
 I'm using a Swift Standard Library decodable functionality in order to manage a type that can decode itself from an external representation (I really ❤ this from Swift).
 
 Reference: [Apple documentation](https://developer.apple.com/documentation/swift/swift_standard_library/encoding_decoding_and_serialization)
+
+### Local goals data model
+
+This model is used for the local goals
+
+```swift
+class LocalGoal: Object {
+    
+    @objc dynamic var goalId: String?
+    @objc dynamic var title: String = ""
+    @objc dynamic var goalDescription: String = ""
+    @objc dynamic var type: String = ""
+    @objc dynamic var goal: Int = 0
+    @objc dynamic var trophy: String = ""
+    @objc dynamic var points: Int = 0
+    
+    override class func primaryKey() -> String? {
+        return "goalId"
+    }
+    
+}
+```
+
+As I'm using Realm for this it's important to define a class to manage each model in the database. In this case we only have one model (LocalGoal)
+
+Reference: [Realm](https://realm.io/docs/swift/latest)
