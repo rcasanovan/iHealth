@@ -70,7 +70,7 @@ extension MyGoalsViewController {
         customTitleView.titleColor = .white
         customTitleView.setTitle("My goals")
         customTitleView.subtitleColor = .white
-        customTitleView.setSubtitle("...")
+        customTitleView.setSubtitle("Check your daily progress")
         navigationItem.titleView = customTitleView
     }
     

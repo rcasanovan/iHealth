@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         configureReachability()
         configureNavigationBar()
+        configShareMessage()
         configureTabBar()
         showInitialView()
         return true
@@ -107,6 +108,14 @@ extension AppDelegate {
         } else {
             rootViewController.dismiss(animated: true, completion: nil)
         }
+    }
+    
+}
+
+extension AppDelegate {
+    
+    public func configShareMessage() {
+        ShareManager.shared.setup(defaultShareMessage: "🏃🏻‍♂️ Hey!. Check my progress with this amazing app!. You can check the project here: https://github.com/rcasanovan/iHealth")
     }
     
 }
