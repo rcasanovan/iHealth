@@ -18,6 +18,7 @@ protocol GoalsViewInjection : class {
 
 protocol GoalsPresenterDelegate : class {
     func viewDidLoad()
+    func refresh()
 }
 
 // Presenter / Interactor
@@ -26,6 +27,7 @@ typealias GoalsGetGoalsCompletionBlock = (_ viewModel: [GoalViewModel]?, _ succe
 
 protocol GoalsInteractorDelegate : class {
     func getGoalsList(completion: @escaping GoalsGetGoalsCompletionBlock)
+    func clear()
 }
 
 // Presenter / Router

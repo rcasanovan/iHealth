@@ -54,9 +54,9 @@ extension GoalsViewController {
         goalsTableView?.backgroundColor = .clear
         goalsTableView?.showsVerticalScrollIndicator = false
         
-//        refreshControl.addTarget(self, action: #selector(userDidPullToRefresh), for: .valueChanged)
-//        refreshControl.tintColor = .black
-//        goalsTableView?.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(userDidPullToRefresh), for: .valueChanged)
+        refreshControl.tintColor = .white
+        goalsTableView?.addSubview(refreshControl)
         
         registerCells()
         setupDatasource()
@@ -106,6 +106,14 @@ extension GoalsViewController {
             goalsContainerView.addConstraintsWithFormat("H:|[v0]|", views: goalsTableView)
             goalsContainerView.addConstraintsWithFormat("V:|[v0]|", views: goalsTableView)
         }
+    }
+    
+}
+
+extension GoalsViewController {
+    
+    @objc private func userDidPullToRefresh() {
+        presenter?.refresh()
     }
     
 }

@@ -84,4 +84,8 @@ extension GoalsInteractor: GoalsInteractorDelegate {
         }
     }
     
+    func clear() {
+        goalsViewModel = []
+    }
+    
 }

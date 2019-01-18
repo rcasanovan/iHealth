@@ -56,4 +56,9 @@ extension GoalsPresenter: GoalsPresenterDelegate {
         getGoals()
     }
     
+    func refresh() {
+        interactor.clear()
+        getGoals()
+    }
+    
 }
