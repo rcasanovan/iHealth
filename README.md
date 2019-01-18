@@ -26,3 +26,27 @@ Basically I have a protocol file for each scene in the app. This file defines th
 Whith this protocols file is really easy to know how each layer notify / request / information to the other ones so we don't have any other way to communicate all the layers.
 
 Another important point is because I'm using protocols it's really easy to define mocks views / presenters / interactors / routers for testing.
+
+```swift
+// View / Presenter
+protocol GoalsViewInjection : class {
+    func showProgress(_ show: Bool, status: String)
+    func showProgress(_ show: Bool)
+    func showMessageWith(title: String, message: String, actionTitle: String)
+    func loadGoals(_ viewModels: [GoalViewModel])
+}
+
+protocol GoalsPresenterDelegate : class {
+    func viewDidLoad()
+    func refresh()
+}
+
+// Presenter / Interactor
+
+typealias GoalsGetGoalsCompletionBlock = (_ viewModel: [GoalViewModel]?, _ success: Bool, _ error: ResultError?) -> Void
+
+protocol GoalsInteractorDelegate : class {
+    func getGoalsList(completion: @escaping GoalsGetGoalsCompletionBlock)
+    func clear()
+}
+```
