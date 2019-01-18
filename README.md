@@ -141,7 +141,7 @@ Used to manage all the connections and requests with the HealthKit framework.
 
 ### General goals and my personal goals
 ![alt tag](https://github.com/rcasanovan/iHealth/blob/master/Images/01.PNG?raw=true)
-![alt tag](https://github.com/rcasanovan/iHealth/blob/master/Images/07.PNG?raw=true)
+![alt tag](https://github.com/rcasanovan/iHealth/blob/master/Images/02.PNG?raw=true)
 
 ## What's left in the demo?
 
