@@ -114,3 +114,55 @@ class LocalGoal: Object {
 As I'm using Realm for this it's important to define a class to manage each model in the database. In this case we only have one model (LocalGoal)
 
 Reference: [Realm](https://realm.io/docs/swift/latest)
+
+## Managers
+
+I think using managers is a good idea but be careful!. Please don't create managers as if the world were going to end tomorrow.
+
+I'm using only 4 here:
+
+### ShareManager
+
+Used to share the current progress using UIActivityViewController.
+
+### ReachabilityManager
+
+Used to manage the reachability. In this case I would like to notify a little issue related with the simulator. *It seems Xcode has an issue with the simulator because if you try to turn off the wifi and turning on again, the observer for the state change is not triggering. It's working 100% fine in a real device*.
+
+### LocalGoalManager
+
+Used to save the goals locally using a Realm database.
+
+### HealthManager
+
+Used to manage all the connections and requests with the HealthKit framework.
+
+## How it looks like?
+
+
+## What's left in the demo?
+
+* Realm migration process: It would be nice to add a process to migrate the realm database to a new model (just in case you need to add a new field into the database)
+
+## Programming languages && Development tools
+
+* Swift 4.2
+* Xcode 10.1
+* [Cocoapods](https://cocoapods.org) 1.5.3
+* Minimun iOS version: 12.1
+
+## Third-Party Libraries
+
+* [RealmSwift](https://github.com/realm/realm-cocoa) (3.7.6): A mobile database that runs directly inside phones, tablets or wearables
+* [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD) (2.2.5): A clean and lightweight progress HUD for your iOS and tvOS app.
+* [XYPieChart](https://github.com/xyfeng/XYPieChart) (0.2): A library to create pie charts for iOS and MacOS.
+
+## Support && contact
+
+### Email
+
+You can contact me using my email: ricardo.casanova@outlook.com
+
+### Twitter
+
+Follow me [@rcasanovan](http://twitter.com/rcasanovan) on twitter.
