@@ -50,3 +50,41 @@ protocol GoalsInteractorDelegate : class {
     func clear()
 }
 ```
+
+## First at all. Where is the data came from?
+
+I'm using the following endpoint to get the goals list -> https://thebigachallenge.appspot.com/_ah/api/myApi/v1/goals/.
+
+## Data models
+
+### Network data models
+
+```swift
+public struct GoalsResponse: Decodable {
+    
+    let items: [GoalResponse]
+    
+}
+
+public struct GoalResponse: Decodable {
+    
+    let id: String
+    let title: String
+    let description: String
+    let type: String
+    let goal: Int
+    let reward: RewardResponse
+    
+}
+
+public struct RewardResponse: Decodable {
+    
+    let trophy: String
+    let points: Int
+    
+}
+```
+
+I'm using a Swift Standard Library decodable functionality in order to manage a type that can decode itself from an external representation (I really ❤ this from Swift).
+
+Reference: [Apple documentation](https://developer.apple.com/documentation/swift/swift_standard_library/encoding_decoding_and_serialization)
