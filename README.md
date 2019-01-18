@@ -147,6 +147,9 @@ Used to manage all the connections and requests with the HealthKit framework.
 ![alt tag](https://github.com/rcasanovan/iHealth/blob/master/Images/03.PNG?raw=true)
 ![alt tag](https://github.com/rcasanovan/iHealth/blob/master/Images/04.PNG?raw=true)
 
+### No internet connection screen
+![alt tag](https://github.com/rcasanovan/iHealth/blob/master/Images/05.PNG?raw=true)
+
 ## What's left in the demo?
 
 * Realm migration process: It would be nice to add a process to migrate the realm database to a new model (just in case you need to add a new field into the database)
