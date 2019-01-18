@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4DF48122BB365C853A38495A /* Pods_iHealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DD8E2C52EAF83E0E978B10 /* Pods_iHealth.framework */; };
 		8635A5D71895FF0CC22D1318 /* Pods_iHealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE24624BA344639A3F64BEFD /* Pods_iHealthTests.framework */; };
+		C812988121F1FE0C0084EEA8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C812988321F1FE0C0084EEA8 /* Localizable.strings */; };
 		C858A04A21EF9C0F000321DC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A04921EF9C0F000321DC /* BaseViewController.swift */; };
 		C858A04D21EFA3C4000321DC /* MyGoalsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A04C21EFA3C4000321DC /* MyGoalsProtocols.swift */; };
 		C858A04F21EFA3D3000321DC /* MyGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A04E21EFA3D3000321DC /* MyGoalsViewController.swift */; };
@@ -92,6 +93,8 @@
 		17DD8E2C52EAF83E0E978B10 /* Pods_iHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80638E1C970545C0757E3D28 /* Pods-iHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iHealth/Pods-iHealth.debug.xcconfig"; sourceTree = "<group>"; };
 		99AAC1C6FDE0804E8D95A577 /* Pods-iHealthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHealthTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iHealthTests/Pods-iHealthTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C812988221F1FE0C0084EEA8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C812988421F1FE110084EEA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C858A04921EF9C0F000321DC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C858A04C21EFA3C4000321DC /* MyGoalsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsProtocols.swift; sourceTree = "<group>"; };
 		C858A04E21EFA3D3000321DC /* MyGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsViewController.swift; sourceTree = "<group>"; };
@@ -375,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				C887EDC121EF47B800D627D9 /* InfoPlist.strings */,
+				C812988321F1FE0C0084EEA8 /* Localizable.strings */,
 			);
 			path = "Localizable Strings";
 			sourceTree = "<group>";
@@ -769,6 +773,7 @@
 				C858A07E21EFC11C000321DC /* InterUI-BlackItalic.ttf in Resources */,
 				C858A07D21EFC11C000321DC /* InterUI-MediumItalic.ttf in Resources */,
 				C858A08121EFC11C000321DC /* InterUI-Regular.ttf in Resources */,
+				C812988121F1FE0C0084EEA8 /* Localizable.strings in Resources */,
 				C887EDBF21EF47B800D627D9 /* InfoPlist.strings in Resources */,
 				C887ED9F21EF45C500D627D9 /* Assets.xcassets in Resources */,
 				C887EE0221EF8FE500D627D9 /* Goals.json in Resources */,
@@ -966,6 +971,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C812988321F1FE0C0084EEA8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C812988221F1FE0C0084EEA8 /* es */,
+				C812988421F1FE110084EEA8 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		C887EDA021EF45C500D627D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

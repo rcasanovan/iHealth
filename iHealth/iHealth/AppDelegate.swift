@@ -115,7 +115,7 @@ extension AppDelegate {
 extension AppDelegate {
     
     public func configShareMessage() {
-        ShareManager.shared.setup(defaultShareMessage: "🏃🏻‍♂️ Hey!. Check my progress with this amazing app!. You can check the project here: https://github.com/rcasanovan/iHealth")
+        ShareManager.shared.setup(defaultShareMessage: NSLocalizedString("share.default.title", comment: ""))
     }
     
 }

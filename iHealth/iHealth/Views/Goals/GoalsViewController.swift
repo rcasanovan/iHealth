@@ -64,9 +64,9 @@ extension GoalsViewController {
     
     private func configureNavigationBar() {
         customTitleView.titleColor = .white
-        customTitleView.setTitle("General goals")
+        customTitleView.setTitle(NSLocalizedString("general_goals.title", comment: ""))
         customTitleView.subtitleColor = .white
-        customTitleView.setSubtitle("Are you ready for the challenge?")
+        customTitleView.setSubtitle(NSLocalizedString("general_goals.subtitle", comment: ""))
         navigationItem.titleView = customTitleView
     }
     

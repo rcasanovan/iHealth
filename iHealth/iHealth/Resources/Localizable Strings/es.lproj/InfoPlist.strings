@@ -6,5 +6,5 @@
   Copyright © 2019 Pijp. All rights reserved.
 */
 
-"NSHealthShareUsageDescription" = "iHealth needs your permission to get access to your health data";
-"NSHealthUpdateUsageDescription" = "iHealth needs your permission to update to your health data";
+"NSHealthShareUsageDescription" = "iHealth necesita tu permiso para tener acceso a tus datos de salud";
+"NSHealthUpdateUsageDescription" = "iHealth necesita tu permiso para actualizar tus datos de salud";

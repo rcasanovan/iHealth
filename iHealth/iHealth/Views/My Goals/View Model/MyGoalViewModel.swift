@@ -64,7 +64,7 @@ extension MyGoalViewModel {
         
         switch type {
         case .step:
-            return "steps"
+            return NSLocalizedString("steps.title", comment: "")
         case .walking, .running:
             return "km"
         }

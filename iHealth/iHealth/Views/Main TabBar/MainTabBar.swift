@@ -34,8 +34,8 @@ extension MainTabBar {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.mediumWithSize(size: 10.0) ?? UIFont.systemFont(ofSize: 10.0)], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.mediumWithSize(size: 10.0) ?? UIFont.systemFont(ofSize: 10.0)], for: .selected)
         
-        let goalsTabBarItem = UITabBarItem(title: "Goals", image: goalsIcon, tag: 0)
-        let myGoalsTabBarItem = UITabBarItem(title: "My Goals", image: myGoalsIcon, tag: 1)
+        let goalsTabBarItem = UITabBarItem(title: NSLocalizedString("goals.title", comment: ""), image: goalsIcon, tag: 0)
+        let myGoalsTabBarItem = UITabBarItem(title: NSLocalizedString("my_goals.title", comment: ""), image: myGoalsIcon, tag: 1)
         
         let goalsNagivationViewController = UINavigationController(rootViewController: goalsViewController)
         goalsNagivationViewController.tabBarItem = goalsTabBarItem

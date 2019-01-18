@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  iHealth
+
+  Created by Ricardo Casanova on 18/01/2019.
+  Copyright © 2019 Pijp. All rights reserved.
+*/
+
+"general_goals.title" = "General goals";
+"general_goals.subtitle" = "Are you ready for the challenge?";
+"goals.title" = "Goals";
+"my_goals.title" = "My Goals";
+"my_goals.subtitle" = "Check your daily progress";
+"steps.title" = "steps";
+"share.default.title" = "🏃🏻‍♂️ Hey!. Check your dayly progress with this amazing app!. You can check the project here: https://github.com/rcasanovan/iHealth";
