@@ -68,7 +68,12 @@ extension MyGoalsPresenter: MyGoalsPresenterDelegate {
         guard let view = view as? UIViewController else {
             return
         }
-        var items: [Any] = ["test"]
+        var items: [Any] = ["🏃🏻‍♂️ Hey!. Check my progress with this amazing app!. You can check the project here: https://github.com/rcasanovan/iHealth"]
+        
+        if let image = Device.takeScreenshot() {
+            items.append(image)
+        }
+        
         ShareManager.shared.share(items, from: view)
     }
     
