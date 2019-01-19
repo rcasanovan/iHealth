@@ -67,7 +67,7 @@ extension MyGoalViewModel {
         case .step:
             return NSLocalizedString("steps.title", comment: "")
         case .walking, .running:
-            return "km"
+            return NSLocalizedString("km.title", comment: "")
         }
     }
     
