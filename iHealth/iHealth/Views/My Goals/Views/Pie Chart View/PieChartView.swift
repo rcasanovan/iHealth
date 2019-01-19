@@ -16,6 +16,14 @@ class PieChartView: UIView {
     private var percentage: CGFloat?
     private var percentageColor: UIColor?
     
+    public var width: CGFloat {
+        return Layout.width
+    }
+    
+    public var height: CGFloat {
+        return Layout.height
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -59,13 +67,13 @@ extension PieChartView {
         pieChart.animationSpeed = 1.5
         pieChart.showPercentage = false
         pieChart.showLabel = false
-        pieChart.pieCenter = CGPoint(x: 40.0, y: 40.0)
+        pieChart.pieCenter = CGPoint(x: Layout.width / 2, y: Layout.width / 2)
         pieChart.setPieBackgroundColor(UIColor.clear)
         pieChart.isUserInteractionEnabled = false
-        pieChart.pieRadius = 40.0
-        pieChart.labelRadius = 40.0
+        pieChart.pieRadius = Layout.width / 2
+        pieChart.labelRadius = Layout.width / 2
         
-        percentageLabel.layer.cornerRadius = 60.0 / 2
+        percentageLabel.layer.cornerRadius = Layout.PercentageLabel.width / 2
         percentageLabel.clipsToBounds = true
         percentageLabel.backgroundColor = .black()
         percentageLabel.textColor = .white()
@@ -84,6 +92,18 @@ extension PieChartView {
      */
     private struct Layout {
         
+        static let width: CGFloat = 80.0
+        static let height: CGFloat = 80.0
+        static let slices: UInt = 2
+        
+        struct PercentageLabel {
+            static let width: CGFloat = 60.0
+            static let leading: CGFloat = 10.0
+            static let trailing: CGFloat = 10.0
+            static let top: CGFloat = 10.0
+            static let bottom: CGFloat = 10.0
+        }
+        
     }
     
     /**
@@ -96,8 +116,8 @@ extension PieChartView {
         addConstraintsWithFormat("H:|[v0]|", views: pieChart)
         addConstraintsWithFormat("V:|[v0]|", views: pieChart)
         
-        addConstraintsWithFormat("H:|-10.0-[v0]-10.0-|", views: percentageLabel)
-        addConstraintsWithFormat("V:|-10.0-[v0]-10.0-|", views: percentageLabel)
+        addConstraintsWithFormat("H:|-\(Layout.PercentageLabel.leading)-[v0]-\(Layout.PercentageLabel.trailing)-|", views: percentageLabel)
+        addConstraintsWithFormat("V:|-\(Layout.PercentageLabel.top)-[v0]-\(Layout.PercentageLabel.bottom)-|", views: percentageLabel)
     }
     
 }
@@ -105,7 +125,7 @@ extension PieChartView {
 extension PieChartView: XYPieChartDataSource {
     
     func numberOfSlices(in pieChart: XYPieChart!) -> UInt {
-        return 2
+        return Layout.slices
     }
     
     func pieChart(_ pieChart: XYPieChart!, colorForSliceAt index: UInt) -> UIColor! {
