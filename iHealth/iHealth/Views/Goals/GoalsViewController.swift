@@ -34,7 +34,7 @@ extension GoalsViewController {
      * SetupViews
      */
     private func setupViews() {
-        view.backgroundColor = UIColor.colorWithHex(hex: "#313336")
+        view.backgroundColor = .gray()
         edgesForExtendedLayout = []
         
         configureSubviews()
@@ -55,7 +55,7 @@ extension GoalsViewController {
         goalsTableView?.showsVerticalScrollIndicator = false
         
         refreshControl.addTarget(self, action: #selector(userDidPullToRefresh), for: .valueChanged)
-        refreshControl.tintColor = .white
+        refreshControl.tintColor = .white()
         goalsTableView?.addSubview(refreshControl)
         
         registerCells()
@@ -63,9 +63,9 @@ extension GoalsViewController {
     }
     
     private func configureNavigationBar() {
-        customTitleView.titleColor = .white
+        customTitleView.titleColor = .white()
         customTitleView.setTitle(NSLocalizedString("general_goals.title", comment: ""))
-        customTitleView.subtitleColor = .white
+        customTitleView.subtitleColor = .white()
         customTitleView.setSubtitle(NSLocalizedString("general_goals.subtitle", comment: ""))
         navigationItem.titleView = customTitleView
     }

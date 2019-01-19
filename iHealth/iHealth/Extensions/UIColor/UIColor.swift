@@ -47,4 +47,33 @@ extension UIColor {
             alpha: CGFloat(alpha)
         )
     }
+    
+}
+
+extension UIColor {
+    
+    public static func white() -> UIColor {
+        return UIColor.white
+    }
+    
+    public static func black() -> UIColor {
+        return UIColor.black
+    }
+    
+    public static func gray() -> UIColor {
+        return UIColor.colorWithHex(hex: "#313336")
+    }
+    
+    public static func blue() -> UIColor {
+        return UIColor.colorWithHex(hex: "#00c7dd")
+    }
+    
+    public static func green() -> UIColor {
+        return UIColor.colorWithHex(hex: "#59e707")
+    }
+    
+    public static func red() -> UIColor {
+        return UIColor.colorWithHex(hex: "#e71135")
+    }
+    
 }

@@ -67,18 +67,18 @@ extension MyGoalView {
      * ConfigureSubviews
      */
     private func configureSubviews() {
-        goalBackgroundView.backgroundColor = .black
+        goalBackgroundView.backgroundColor = .black()
                 
         titleLabel.font = UIFont.boldWithSize(size: 15.0)
-        titleLabel.textColor = .white
+        titleLabel.textColor = .white()
         titleLabel.textAlignment = .right
         
         valueTitleLabel.font = UIFont.mediumWithSize(size: 32.0)
-        valueTitleLabel.textColor = .white
+        valueTitleLabel.textColor = .white()
         valueTitleLabel.textAlignment = .right
         
         valueSubtitleLabel.font = UIFont.mediumWithSize(size: 14.0)
-        valueSubtitleLabel.textColor = .white
+        valueSubtitleLabel.textColor = .white()
         valueSubtitleLabel.textAlignment = .right
     }
     

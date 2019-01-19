@@ -31,8 +31,8 @@ extension MainTabBar {
         let goalsIcon = UIImage(named: "goalsIcon")?.withRenderingMode(.alwaysOriginal)
         let myGoalsIcon = UIImage(named: "myGoalsIcon")?.withRenderingMode(.alwaysOriginal)
         
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.mediumWithSize(size: 10.0) ?? UIFont.systemFont(ofSize: 10.0)], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.mediumWithSize(size: 10.0) ?? UIFont.systemFont(ofSize: 10.0)], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white(), NSAttributedString.Key.font: UIFont.mediumWithSize(size: 10.0) ?? UIFont.systemFont(ofSize: 10.0)], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white(), NSAttributedString.Key.font: UIFont.mediumWithSize(size: 10.0) ?? UIFont.systemFont(ofSize: 10.0)], for: .selected)
         
         let goalsTabBarItem = UITabBarItem(title: NSLocalizedString("goals.title", comment: ""), image: goalsIcon, tag: 0)
         let myGoalsTabBarItem = UITabBarItem(title: NSLocalizedString("my_goals.title", comment: ""), image: myGoalsIcon, tag: 1)

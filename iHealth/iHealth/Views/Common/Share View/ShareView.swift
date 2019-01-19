@@ -41,7 +41,7 @@ extension ShareView {
     }
     
     private func configureSubviews() {
-        shareButton.setTitleColor(.black, for: .normal)
+        shareButton.setTitleColor(.black(), for: .normal)
         shareButton.setBackgroundImage(UIImage(named: "shareIcon"), for: .normal)
         shareButton.setBackgroundImage(UIImage(named: "shareIcon"), for: .highlighted)
         shareButton.addTarget(self, action: #selector(shareButtonPressed) , for: .touchUpInside)

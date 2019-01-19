@@ -54,10 +54,10 @@ class CustomTitleView: UIView {
         
         backgroundColor = .clear
         titleLabel.font = UIFont.mediumWithSize(size: 15.0)
-        titleLabel.textColor = .white
+        titleLabel.textColor = .white()
         
         subtitleLabel.font = UIFont.mediumWithSize(size: 13.0)
-        subtitleLabel.textColor = .white
+        subtitleLabel.textColor = .white()
     }
     
     private func addViewsConfig() {

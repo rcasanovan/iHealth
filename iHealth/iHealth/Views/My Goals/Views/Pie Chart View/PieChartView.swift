@@ -67,8 +67,8 @@ extension PieChartView {
         
         percentageLabel.layer.cornerRadius = 60.0 / 2
         percentageLabel.clipsToBounds = true
-        percentageLabel.backgroundColor = .black
-        percentageLabel.textColor = .white
+        percentageLabel.backgroundColor = .black()
+        percentageLabel.textColor = .white()
         percentageLabel.font = UIFont.mediumWithSize(size: 14.0)
         percentageLabel.textAlignment = .center
     }
@@ -112,7 +112,7 @@ extension PieChartView: XYPieChartDataSource {
         case 0:
             return percentageColor ?? .clear
         default:
-            return .white
+            return .white()
         }
     }
     

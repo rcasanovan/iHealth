@@ -78,11 +78,11 @@ extension MyGoalViewModel {
         
         switch type {
         case .step:
-            return UIColor.colorWithHex(hex: "#00c7dd")
+            return .blue()
         case .walking:
-            return UIColor.colorWithHex(hex: "#59e707")
+            return .green()
         case .running:
-            return UIColor.colorWithHex(hex: "#e71135")
+            return .red()
         }
     }
     

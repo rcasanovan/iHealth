@@ -77,17 +77,17 @@ extension GoalView {
         goalImageView.backgroundColor = .clear
         
         titleLabel.font = UIFont.boldWithSize(size: 15.0)
-        titleLabel.textColor = .white
+        titleLabel.textColor = .white()
         
         subtitleLabel.font = UIFont.regularWithSize(size: 13.0)
-        subtitleLabel.textColor = .white
+        subtitleLabel.textColor = .white()
         
         valueTitleLabel.font = UIFont.mediumWithSize(size: 32.0)
-        valueTitleLabel.textColor = .white
+        valueTitleLabel.textColor = .white()
         valueTitleLabel.textAlignment = .right
         
         valueSubtitleLabel.font = UIFont.mediumWithSize(size: 14.0)
-        valueSubtitleLabel.textColor = .white
+        valueSubtitleLabel.textColor = .white()
         valueSubtitleLabel.textAlignment = .right
     }
     
