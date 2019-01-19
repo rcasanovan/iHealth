@@ -10,6 +10,11 @@ If you have any doubt about cocoapods you can check the reference [here](https:/
 
 ## Cool things with the demo
 
+* No internet connection message
+* Local goals cache
+* Share option
+* A beatiful user interface
+
 ## Project Architecture 
 ![alt tag](https://github.com/rcasanovan/iHealth/blob/master/Images/projectArchitecture.jpeg?raw=true)
 
