@@ -72,7 +72,7 @@ extension GoalView {
      * ConfigureSubviews
      */
     private func configureSubviews() {
-        goalBackgroundView.colors = [UIColor.colorWithHex(hex: "#ff6855").cgColor, UIColor.colorWithHex(hex: "#fe5c46").cgColor, UIColor.colorWithHex(hex: "#ff5350").cgColor, UIColor.colorWithHex(hex: "#fe4e36").cgColor]
+        goalBackgroundView.colors = UIColor.orangeGradient()
         
         goalImageView.backgroundColor = .clear
         

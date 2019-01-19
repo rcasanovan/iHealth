@@ -76,4 +76,8 @@ extension UIColor {
         return UIColor.colorWithHex(hex: "#e71135")
     }
     
+    public static func orangeGradient() -> [CGColor] {
+        return [UIColor.colorWithHex(hex: "#ff6855").cgColor, UIColor.colorWithHex(hex: "#fe5c46").cgColor, UIColor.colorWithHex(hex: "#ff5350").cgColor, UIColor.colorWithHex(hex: "#fe4e36").cgColor]
+    }
+    
 }
