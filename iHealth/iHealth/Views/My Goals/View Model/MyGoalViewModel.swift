@@ -33,10 +33,11 @@ struct MyGoalViewModel {
     }
     
     private static func getViewModelWith(_ goal: LocalGoal, userSteps: Int, userDistance: Double) -> MyGoalViewModel {
-        let goalValue = getGoalValue(userSteps: userSteps, userDistance: userDistance, value: goal.goal, type: GoalType(rawValue: goal.type))
-        let goalType = getGoalType(GoalType(rawValue: goal.type))
-        let color = getColor(GoalType(rawValue: goal.type))
-        let percentage = getPercentage(userSteps: userSteps, userDistance: userDistance, value: goal.goal, type: GoalType(rawValue: goal.type))
+        let type = GoalType(rawValue: goal.type)
+        let goalValue = getGoalValue(userSteps: userSteps, userDistance: userDistance, value: goal.goal, type: type)
+        let goalType = getGoalType(type)
+        let color = getColor(type)
+        let percentage = getPercentage(userSteps: userSteps, userDistance: userDistance, value: goal.goal, type: type)
         return MyGoalViewModel(title: goal.title, points: goal.points, goal: goalValue, goalType: goalType, percentage: percentage, percentageTitle: "\(Int(percentage))%", percentageColor: color)
     }
     
