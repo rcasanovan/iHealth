@@ -41,6 +41,7 @@ class MyGoalView: UIView {
         titleLabel.text = ""
         valueTitleLabel.text = ""
         valueSubtitleLabel.text = ""
+        pieChartView.clear()
     }
     
     override func layoutSubviews() {

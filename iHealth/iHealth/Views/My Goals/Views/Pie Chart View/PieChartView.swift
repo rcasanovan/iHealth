@@ -42,6 +42,10 @@ class PieChartView: UIView {
     }
     
     public func clear() {
+        percentage = 0.0
+        percentageColor = .clear
+        percentageLabel.text = ""
+        pieChart.reloadData()
     }
     
 }
