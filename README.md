@@ -8,6 +8,8 @@ This project is using cocoapods. Please be sure to run the **pod install** comma
 
 If you have any doubt about cocoapods you can check the reference [here](https://cocoapods.org).
 
+## Cool things with the demo
+
 ## Project Architecture 
 ![alt tag](https://github.com/rcasanovan/iHealth/blob/master/Images/projectArchitecture.jpeg?raw=true)
 
