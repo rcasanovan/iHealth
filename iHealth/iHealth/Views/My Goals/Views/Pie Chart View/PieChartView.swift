@@ -71,6 +71,7 @@ extension PieChartView {
         percentageLabel.textColor = .white()
         percentageLabel.font = UIFont.mediumWithSize(size: 14.0)
         percentageLabel.textAlignment = .center
+        percentageLabel.adjustsFontSizeToFitWidth = true
     }
     
 }

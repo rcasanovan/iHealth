@@ -76,10 +76,12 @@ extension MyGoalView {
         valueTitleLabel.font = UIFont.mediumWithSize(size: 32.0)
         valueTitleLabel.textColor = .white()
         valueTitleLabel.textAlignment = .right
+        valueTitleLabel.adjustsFontSizeToFitWidth = true
         
         valueSubtitleLabel.font = UIFont.mediumWithSize(size: 14.0)
         valueSubtitleLabel.textColor = .white()
         valueSubtitleLabel.textAlignment = .right
+        valueSubtitleLabel.adjustsFontSizeToFitWidth = true
     }
     
 }

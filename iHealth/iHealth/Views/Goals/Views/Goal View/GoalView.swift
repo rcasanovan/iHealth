@@ -78,17 +78,21 @@ extension GoalView {
         
         titleLabel.font = UIFont.boldWithSize(size: 15.0)
         titleLabel.textColor = .white()
+        titleLabel.adjustsFontSizeToFitWidth = true
         
         subtitleLabel.font = UIFont.regularWithSize(size: 13.0)
         subtitleLabel.textColor = .white()
+        subtitleLabel.adjustsFontSizeToFitWidth = true
         
         valueTitleLabel.font = UIFont.mediumWithSize(size: 32.0)
         valueTitleLabel.textColor = .white()
         valueTitleLabel.textAlignment = .right
+        valueTitleLabel.adjustsFontSizeToFitWidth = true
         
         valueSubtitleLabel.font = UIFont.mediumWithSize(size: 14.0)
         valueSubtitleLabel.textColor = .white()
         valueSubtitleLabel.textAlignment = .right
+        valueSubtitleLabel.adjustsFontSizeToFitWidth = true
     }
     
 }
@@ -155,7 +159,7 @@ extension GoalView {
         addConstraintsWithFormat("H:|-\(Layout.GoalImageView.leading)-[v0(\(Layout.GoalImageView.width))]", views: goalImageView)
         addConstraintsWithFormat("V:|-\(Layout.GoalImageView.top)-[v0(\(Layout.GoalImageView.height))]", views: goalImageView)
         
-        addConstraintsWithFormat("H:[v0]-\(Layout.TitleLabel.leading)-[v1]-\(Layout.TitleLabel.trailing)-[v2]", views: goalImageView, titleLabel, valueTitleLabel)
+        addConstraintsWithFormat("H:[v0]-\(Layout.TitleLabel.leading)-[v1]-\(Layout.TitleLabel.trailing)-|", views: goalImageView, titleLabel)
         addConstraintsWithFormat("V:|-\(Layout.TitleLabel.top)-[v0(\(Layout.TitleLabel.height))]", views: titleLabel)
 
         addConstraintsWithFormat("H:[v0]-\(Layout.SubtitleLabel.leading)-[v1]-\(Layout.SubtitleLabel.trailing)-[v2]", views: goalImageView, subtitleLabel, valueTitleLabel)
