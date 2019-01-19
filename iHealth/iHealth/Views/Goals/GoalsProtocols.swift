@@ -29,8 +29,3 @@ protocol GoalsInteractorDelegate : class {
     func getGoalsList(completion: @escaping GoalsGetGoalsCompletionBlock)
     func clear()
 }
-
-// Presenter / Router
-
-protocol GoalsRouterDelegate : class {
-}
