@@ -18,6 +18,7 @@ protocol MyGoalsPresenterDelegate : class {
     func viewDidLoad()
     func viewDidAppear()
     func sharePressed()
+    func refresh()
 }
 
 // Presenter / Interactor
@@ -27,6 +28,7 @@ typealias MyGoalsGetGoalsCompletionBlock = (_ viewModel: [MyGoalViewModel]) -> V
 protocol MyGoalsInteractorDelegate : class {
     func requestHealthAuthorizationIfNeeded(completion: @escaping HealthAuthCompletionBlock)
     func getMyGoals(completion: @escaping MyGoalsGetGoalsCompletionBlock)
+    func clear()
 }
 
 // Presenter / Router

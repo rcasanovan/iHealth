@@ -17,6 +17,7 @@ class MyGoalsViewController: BaseViewController {
     private let myGoalsContainerView: UIView = UIView()
     private var myGoalsTableView: UITableView?
     private var datasource: MyGoalsDatasource?
+    private var refreshControl: UIRefreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +62,10 @@ extension MyGoalsViewController {
         myGoalsTableView?.invalidateIntrinsicContentSize()
         myGoalsTableView?.backgroundColor = .clear
         myGoalsTableView?.showsVerticalScrollIndicator = false
+        
+        refreshControl.addTarget(self, action: #selector(userDidPullToRefresh), for: .valueChanged)
+        refreshControl.tintColor = .white
+        myGoalsTableView?.addSubview(refreshControl)
         
         registerCells()
         setupDatasource()
@@ -114,6 +119,14 @@ extension MyGoalsViewController {
     
 }
 
+extension MyGoalsViewController {
+    
+    @objc private func userDidPullToRefresh() {
+        presenter?.refresh()
+    }
+    
+}
+
 // MARK: - ShareViewDelegate
 extension MyGoalsViewController: ShareViewDelegate {
     
@@ -131,6 +144,7 @@ extension MyGoalsViewController: MyGoalsViewInjection {
     
     
     func loadMyGoals(_ viewModels: [MyGoalViewModel]) {
+        refreshControl.endRefreshing()
         datasource?.myGoals = viewModels
         myGoalsTableView?.reloadData()
     }

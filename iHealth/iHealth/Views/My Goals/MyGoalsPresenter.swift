@@ -77,4 +77,9 @@ extension MyGoalsPresenter: MyGoalsPresenterDelegate {
         ShareManager.shared.share(items, from: view)
     }
     
+    func refresh() {
+        interactor.clear()
+        getMyGoals()
+    }
+    
 }

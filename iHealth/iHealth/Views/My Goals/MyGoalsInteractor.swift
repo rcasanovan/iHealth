@@ -64,4 +64,10 @@ extension MyGoalsInteractor: MyGoalsInteractorDelegate {
         getUserSteps()
     }
     
+    func clear() {
+        myGoalsViewModel = []
+        userSteps = 0
+        userDistance = 0.0
+    }
+    
 }
