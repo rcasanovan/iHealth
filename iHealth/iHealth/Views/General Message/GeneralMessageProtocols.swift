@@ -12,5 +12,5 @@ protocol GeneralMessageViewInjection : class {
 }
 
 protocol GeneralMessagePresenterDelegate : class {
-    func viewDidLoad()
+    func viewDidAppear()
 }

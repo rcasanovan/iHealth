@@ -17,7 +17,7 @@ class GeneralMessageViewController: BaseViewController {
         super.viewDidAppear(animated)
         setupViews()
         showLoader(false)
-        presenter?.viewDidLoad()
+        presenter?.viewDidAppear()
     }
     
     override var prefersStatusBarHidden: Bool {

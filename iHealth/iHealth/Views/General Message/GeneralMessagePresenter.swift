@@ -29,9 +29,9 @@ class GeneralMessagePresenter {
 extension GeneralMessagePresenter: GeneralMessagePresenterDelegate {
     
     /**
-     * View did load
+     * View did appear
      */
-    func viewDidLoad() {
+    func viewDidAppear() {
         switch type {
         case .NoInternetConnection:
             view?.load(title: NSLocalizedString("no_connection.title", comment: ""), message: NSLocalizedString("no_connection.subtitle", comment: ""))
