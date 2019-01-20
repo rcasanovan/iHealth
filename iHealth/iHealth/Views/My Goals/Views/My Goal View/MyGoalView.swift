@@ -100,8 +100,6 @@ extension MyGoalView {
         struct GoalImageView {
             static let leading: CGFloat = 10.0
             static let top: CGFloat = 10.0
-            static let height: CGFloat = 80.0
-            static let width: CGFloat = 80.0
         }
         
         struct TitleLabel {
@@ -146,8 +144,8 @@ extension MyGoalView {
         addConstraintsWithFormat("H:|[v0]|", views: goalBackgroundView)
         addConstraintsWithFormat("V:|[v0(\(Layout.height))]|", views: goalBackgroundView)
         
-        addConstraintsWithFormat("H:|-\(Layout.GoalImageView.leading)-[v0(\(Layout.GoalImageView.width))]", views: pieChartView)
-        addConstraintsWithFormat("V:|-\(Layout.GoalImageView.top)-[v0(\(Layout.GoalImageView.height))]", views: pieChartView)
+        addConstraintsWithFormat("H:|-\(Layout.GoalImageView.leading)-[v0(\(pieChartView.width))]", views: pieChartView)
+        addConstraintsWithFormat("V:|-\(Layout.GoalImageView.top)-[v0(\(pieChartView.height))]", views: pieChartView)
         
         addConstraintsWithFormat("H:[v0]-\(Layout.TitleLabel.leading)-[v1]-\(Layout.TitleLabel.trailing)-|", views: pieChartView, titleLabel)
         addConstraintsWithFormat("V:|-\(Layout.TitleLabel.top)-[v0(\(Layout.TitleLabel.height))]", views: titleLabel)
