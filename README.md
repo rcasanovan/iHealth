@@ -160,6 +160,7 @@ Used to manage all the connections and requests with the HealthKit framework.
 
 * Realm migration process: It would be nice to add a process to migrate the realm database to a new model (just in case you need to add a new field into the database).
 * Localizable strings from server (goals list): It would be nice to have an option to retrieve the goals list with localizable strings according with the device language.
+* Logic to refresh my goals screen every xx minutes: It's a good idea to have a logic to refresh my goals screen every xx minutes.
 
 ## Programming languages && Development tools
 
