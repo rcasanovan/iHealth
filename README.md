@@ -10,7 +10,7 @@ If you have any doubt about cocoapods you can check the reference [here](https:/
 
 ## Cool things with the demo
 
-* No internet connection message: If the user opens the app and it doesn't download the goals list before, no internet connection message appears (the app needs the goals inforamtion in order to determinate the user progress)
+* No internet connection message: If the user opens the app and it doesn't download the goals list before, no internet connection message appears (the app needs the goals information in order to determinate the user progress)
 * Local goals cache: The app is using a local goals cache so if the device doesn't have internet connection, the app will use the local information
 * Share option: You can share a screenshot for your daily progress
 
