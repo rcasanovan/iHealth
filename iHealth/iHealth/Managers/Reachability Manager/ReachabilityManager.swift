@@ -1,9 +1,7 @@
 //
 //  ReachabilityManager.swift
-//  Glovo Test
 //
 //  Created by Ricardo Casanova on 08/01/2019.
-//  Copyright © 2019 Glovo. All rights reserved.
 //
 
 import Foundation
